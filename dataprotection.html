@@ -1,0 +1,2119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <title>sjrtravels.com | Save Big on Flight Tickets | Enjoy Discounts</title>
+    
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    
+    
+
+    <link rel="shortcut icon" href="/Content/images/fav.png" type="image/x-icon" />
+    <link href="/Content/css/bootstrap.css" rel="stylesheet" type="text/css" />
+    
+    <link href="/Content/css/main.css" rel="stylesheet"/>
+<link href="/Content/css/custom.css" rel="stylesheet"/>
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+    
+<meta name="description" content="Book Cheap Flights & Discounted Airfares. Budgeted Airlines - First Class & Business Class Tickets" />
+<style>
+    .about-intro ul li {
+        line-height: 2;
+    }
+
+    .about-intro h3 {
+        color: #f9676b;
+    }
+
+    h4 {
+        margin: 20px 0 10px 0 !important;
+    }
+
+    .list-bullet li {
+        list-style: disc;
+        color: #07253F;
+        font-family: 'Open Sans',sans-serif;
+        line-height: 1.4 !important;
+        margin-left: 19px;
+        margin-bottom: 9px;
+        padding-left: 7px;
+    }
+</style>
+
+
+    <script src="/Content/js/jquery.js"></script>
+<script src="/Content/js/jquery-ui.min.js"></script>
+<script src="/Scripts/jquery.validate.js"></script>
+<script src="/Content/js/bootstrap.js"></script>
+
+    
+    <style>
+      
+        .blkoverlay1{background:rgba(0,0,0,.7);position:fixed;width:100%;height:100%;z-index:1000;display:none;cursor:url(/content/images/close-icon.png), auto;}
+        .confirmationPopup{width:470px;height:210px;border:4px solid #000;position:fixed;left:0px;top:0px;right:0px;bottom:0px;background:#fff;padding:2% 1%;z-index:100000;margin:auto;display:none;border-radius:10px;}
+        .confirmationPopup p{font-size:15px;color:#333;text-align:center;}
+        .confirmationPopup p span{color:#fb8c07;font-weight:bold;}
+        .confirmationPopup p b{text-align:center;font-size:16px;padding-top:10px;display:block;}
+        .btnHolder{position:absolute;bottom:20px;width:100%;left:0px;padding:0px 5%;text-align:center;}
+        .btnHolder button{padding:5px 40px;color:#fff;font-size:13px;border:none;}
+        .btnHolder button:hover {background:#fb8c07;}
+        .yesBtn{background:rgba(68, 128, 183, 1);margin-right:50px;}
+        .noBtn{background:#6ba2d4;}
+        .showtab{display:block !important;}
+        .hidetab{display:none !important;}
+
+        @media (max-width: 480px) {
+  .callicon.call-mobile {
+    display:none!important;
+  }
+}
+
+        @media (max-width:768px) {
+            .confirmationPopup {
+                width: auto;
+                padding: 2% 0.5%;
+            }
+
+                .confirmationPopup p b {
+                    text-align: center;
+                    font-size: 14px;
+                }
+        }
+    </style>
+
+    <script>
+        var isProcessing = false;
+    </script>
+
+</head>
+
+
+<body onload="CheckCookiesStatus(); StartTimers();" onunload="" onmousemove="" class="   expand-popup" >
+    <div class="blackoverlay">
+        <div class="bar"></div>
+        Processing Request...
+    </div>
+    <div class="blkoverlay1" id="blkoverlay1"></div>
+
+    <div id="dvCheckCookies" style="display: none;">
+        <div class="bg-overlay" style="">
+            <div class="popup-window">
+                <div class="mbox">
+                    <p>
+                        To continue using this site, please enable cookies in your web browser.
+                    </p>
+
+                    <div class="buttoncall">
+                        <input id="Button6" type="button" value="Close" onclick="return IsCookiesEnabled();" />
+                        <input id="Button4" type="button" value="Refresh" onclick="return IsCookiesEnabled();" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="orientation-box">
+        <div class="imagebox"></div>
+        <h5>Please rotate your device</h5>
+        <h6>We don't support landscape mode yet. Please go back to portrait mode for the best experience</h6>
+    </div>
+    <div id="dvAcceptCookies" class="gdpr-wraper" style="display: none;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 cookie-content">
+                    <div class="divonDekstop">
+                    We use cookies to improve your experience. By using the site you agree to the use of cookies.
+                    For more information and options regarding cookies and personal data, see our <a href="/cookies.html">Cookies Policy</a></div>
+                   <div class="divonmobb">We use <a href="/cookies.html">cookies</a> to improve your experience.Keep Browsing!</div>
+                </div>
+                <div class="col-md-2">
+                    <input id="Button5" class="cookiebtn" type="button" value="Accept" onclick="return AllowCookies();" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- header page-->
+    <header>
+        <div class="container pr">
+            <div class="callbgimage">
+                <div class="col-md-9 col-sm-9 callbutton">
+                    <div class="call-icon-wrap"><i class="fa fa-phone" aria-hidden="true"></i><i class="fa fa-times" aria-hidden="true" style="display: none;"></i></div>
+                    <!-- lang select wrapper-->
+                    <div class="top-left-wrap font-3">
+                        <div class="btnHolder">
+                        </div>
+                        <div class="tel-top">
+                            <a href="tel:+91-971-700-7657"> <span class="callnonmob"><i class="fa fa-phone"></i>+91-971-700-7657</span></a>
+                            
+                        </div>
+
+                    </div>
+                    <!-- ! lang select wrapper-->
+                </div>
+                <img src="/Content/images/avalablenow.png" />
+            </div>
+            <!-- site top panel-->
+
+
+            <div class="nav-logo-wrap local-scroll">
+                <a href="/" class="logo">
+                    <img src="/Content/images/logo.gif" style="animation-iteration-count: infinite;"  alt="SJR Travels" />
+                </a>
+            </div>
+            <!-- ! site top panel-->
+        </div>
+        
+    <!-- Navigation panel-->
+<style>
+    .anodisp {
+        display: none;
+    }
+</style>
+
+<nav class="main-nav js-stick">
+    <div class="full-wrapper relative clearfix">
+        <!-- Logo ( * your text or image into link tag *)-->
+        <!-- Main Menu-->
+        <div class="inner-nav desktop-nav">
+
+            <ul class="clearlist">
+                <!-- Item With Sub-->
+                <li>
+                <a href="/" id="home" class="mn-has-sub active flightMenu"
+                  >Flight</a
+                >
+                <a href="./hotels.html" id="home" class="mn-has-sub active flightMenu"
+                  >Hotels</a
+                >
+              </li>
+                <!-- End Item With Sub-->
+                <!-- Item With Sub-->
+                 <li class="megamenu">
+                <a href="#" class="mn-has-sub PopularDestMenu"
+                  >Top Destinations <i class="fa fa-angle-down button_open"></i
+                ></a>
+                <ul class="mn-sub mn-has-multi">
+                  <li class="mn-sub-multi">
+                    <h2>Popular Destinations</h2>
+                    <ul>
+                      <li>
+                        <a
+                          href="/destination/agra.html"
+                          onclick="return GetDestination('/destination/agra', 'Menu')"
+                          >Agra</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="/destination/jaipur.html"
+                          onclick="return GetDestination('/destination/jaipur', 'Menu')"
+                          >Jaipur</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="/destination/kerala.html"
+                          onclick="return GetDestination('/destination/kerela', 'Menu')"
+                          >Kerela</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="/destination/Varanasi.html"
+                          onclick="return GetDestination('/destination/Varanasi', 'Menu')"
+                          >Varanasi</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="/destination/goa.html"
+                          onclick="return GetDestination('/destination/goa', 'Menu')"
+                          >Goa</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="/destination/ladakh.html"
+                          onclick="return GetDestination('/destination/ladakh', 'Menu')"
+                          >Ladakh</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="/destination/darjeeling.html"
+                          onclick="return GetDestination('/destination/darjeeling', 'Menu')"
+                          >Darjeeling</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="/destination/rishikesh.html"
+                          onclick="return GetDestination('/destination/rishikesh', 'Menu')"
+                          >Rishikesh</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="/destination/mumbai.html"
+                          onclick="return GetDestination('/destination/mumbai', 'MM')"
+                          >Mumbai</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="/destination/udaipur.html"
+                          onclick="return GetDestination('/destination/udaipur', 'Menu')"
+                          >Udaipur</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="megamenu">
+                <a href="#" class="mn-has-sub PopularAirMenu">Our Services <i class="fa fa-angle-down button_open"></i></a>
+                <ul class="mn-sub mn-has-multi ligridview">
+                    <li><a href="/services/flights.html">Flight Bookings</a></li>
+                    <li><a href="/services/trains.html">Train Reservations</a></li>
+                    <li><a href="/services/buses.html">Bus Ticketing</a></li>
+                    <li><a href="/services/hotels.html">Hotel Bookings</a></li>
+                    <li><a href="/services/cabs.html">Cab Rentals</a></li>
+                    <li><a href="/services/adventure-packages.html">Adventure Packages</a></li>
+                    <li><a href="/services/cruise-bookings.html">Cruise Bookings</a></li>
+                    <li><a href="/services/honeymoon-packages.html">Honeymoon Packages</a></li>
+                    <li><a href="/services/group-tours.html">Group Tours</a></li>
+                    <li><a href="/services/corporate-packages.html">Corporate Packages</a></li>
+                    <li><a href="/services/family-vacations.html">Family Vacations</a></li>
+                    <li><a href="/services/visa-assistance.html">Visa Assistance</a></li>
+                    <li><a href="/services/travel-insurance.html">Travel Insurance</a></li>
+                    <li><a href="/services/special-deals.html">Special Deals</a></li>
+                </ul>
+            <li class="megamenu">
+    <a href="#" class="mn-has-sub BusinessClassMenu">Top Business Deals <i class="fa fa-angle-down button_open"></i></a>
+    <ul class="mn-sub mn-has-multi ligridview">
+        <li><a href="/services/corporate-packages.html">Corporate Packages</a></li>
+        <li><a href="/services/family-vacations.html">Family Vacations</a></li>
+        <li><a href="/services/adventure-packages.html">Adventure Packages</a></li>
+    </ul>
+</li>
+
+               
+
+                <li class="search1">
+                    <a href="javascript:void(0);" class="freecallbackBtn">
+                        <span class="callusbtn">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Svg1" x="0px" y="0px" width="32.667px" height="32.667px" viewBox="0 0 32.667 32.667" style="enable-background:new 0 0 32.667 32.667;" xml:space="preserve">
+<g>
+                            <path d="M16.333,0C7.327,0,0,7.327,0,16.334c0,9.006,7.326,16.333,16.333,16.333c0.557,0,1.007-0.451,1.007-1.006   c0-0.556-0.45-1.007-1.007-1.007c-7.896,0-14.318-6.424-14.318-14.319c0-7.896,6.422-14.32,14.318-14.32   c7.896,0,14.317,6.424,14.317,14.32c0,3.299-1.756,6.571-4.269,7.955c-0.913,0.502-1.903,0.751-2.959,0.761   c0.634-0.378,1.183-0.887,1.591-1.531c0.08-0.121,0.186-0.226,0.238-0.359c0.328-0.789,0.357-1.684,0.555-2.516   c0.243-1.066-4.658-3.143-5.084-1.815c-0.154,0.493-0.39,2.048-0.699,2.458c-0.275,0.365-0.953,0.193-1.377-0.168   c-1.117-0.952-2.364-2.352-3.458-3.457l0.002-0.001c-0.028-0.029-0.062-0.062-0.092-0.091c-0.031-0.03-0.062-0.062-0.093-0.092l0,0   c-1.106-1.093-2.506-2.338-3.457-3.458c-0.36-0.424-0.534-1.1-0.168-1.376c0.41-0.31,1.966-0.543,2.458-0.698   c1.326-0.425-0.75-5.329-1.816-5.084c-0.832,0.195-1.727,0.225-2.516,0.552c-0.134,0.056-0.238,0.16-0.359,0.24   c-2.799,1.775-3.16,6.083-0.428,9.292c1.041,1.228,2.127,2.416,3.245,3.576l-0.006,0.004c0.031,0.031,0.063,0.06,0.095,0.09   c0.03,0.031,0.059,0.062,0.088,0.095l0.006-0.006c1.16,1.118,2.535,2.764,4.769,4.255c4.703,3.141,8.312,2.264,10.438,1.098   c3.67-2.021,5.312-6.338,5.312-9.719C32.667,7.327,25.339,0,16.333,0z"></path>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+</svg> Get An Instant Call Back<i class="fa fa-angle-down"></i>
+                        </span>
+                    </a>
+
+                </li>
+            </ul>
+        </div>
+        <div class="call-icon-wrap"><i class="fa fa-phone" aria-hidden="true"></i><i class="fa fa-times" aria-hidden="true" style="display: none;"></i></div>
+        <div class="top-left-wrap font-3">
+            <div class="btnHolder">
+            </div>
+            <div class="tel-top" style="display: none;">
+                <a href="tel:+91-971-700-7657">
+                    <span><i class="fa fa-phone" style="display: inline-block;"></i>+91-971-700-7657</span>
+                </a>
+
+                <span class="callnowpop">
+                    <i style="display: inline-block;" class="call-hp">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Svg2" x="0px" y="0px" width="32.667px" height="32.667px" viewBox="0 0 32.667 32.667" style="enable-background:new 0 0 32.667 32.667;" xml:space="preserve">
+<g>
+                        <path d="M16.333,0C7.327,0,0,7.327,0,16.334c0,9.006,7.326,16.333,16.333,16.333c0.557,0,1.007-0.451,1.007-1.006   c0-0.556-0.45-1.007-1.007-1.007c-7.896,0-14.318-6.424-14.318-14.319c0-7.896,6.422-14.32,14.318-14.32   c7.896,0,14.317,6.424,14.317,14.32c0,3.299-1.756,6.571-4.269,7.955c-0.913,0.502-1.903,0.751-2.959,0.761   c0.634-0.378,1.183-0.887,1.591-1.531c0.08-0.121,0.186-0.226,0.238-0.359c0.328-0.789,0.357-1.684,0.555-2.516   c0.243-1.066-4.658-3.143-5.084-1.815c-0.154,0.493-0.39,2.048-0.699,2.458c-0.275,0.365-0.953,0.193-1.377-0.168   c-1.117-0.952-2.364-2.352-3.458-3.457l0.002-0.001c-0.028-0.029-0.062-0.062-0.092-0.091c-0.031-0.03-0.062-0.062-0.093-0.092l0,0   c-1.106-1.093-2.506-2.338-3.457-3.458c-0.36-0.424-0.534-1.1-0.168-1.376c0.41-0.31,1.966-0.543,2.458-0.698   c1.326-0.425-0.75-5.329-1.816-5.084c-0.832,0.195-1.727,0.225-2.516,0.552c-0.134,0.056-0.238,0.16-0.359,0.24   c-2.799,1.775-3.16,6.083-0.428,9.292c1.041,1.228,2.127,2.416,3.245,3.576l-0.006,0.004c0.031,0.031,0.063,0.06,0.095,0.09   c0.03,0.031,0.059,0.062,0.088,0.095l0.006-0.006c1.16,1.118,2.535,2.764,4.769,4.255c4.703,3.141,8.312,2.264,10.438,1.098   c3.67-2.021,5.312-6.338,5.312-9.719C32.667,7.327,25.339,0,16.333,0z"></path>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+</svg>
+                    </i>
+                    <p class="small">
+                        Free Call Back
+                        <b>We'll Call you</b>
+                    </p>
+                </span>
+            </div>
+
+        </div>
+    </div>
+</nav>
+<div class="call-to-phone" id="divTopHeaderCallBack" style="display:none;">
+    <div id="divCallBackTop">
+        <form id="formCallOus" action="/contact" method="post" autocomplete="off">
+            <input type="hidden" id="hdnCallOus" name="FormType" value="CallOus" />
+
+        <span class="font-4">
+            <div class="callbackInpHolder">
+                <img src="/Content/images/ukflag-icon.jpg" class="flagicon" />
+                <b class="call-bycountry">+91</b>
+                <input class="anodisp" name="countrycode" type="text">
+                <input type="tel" title="Enter 10-15 digits phone number" pattern="\d*" required placeholder="Enter 10-15 digits number"
+                       value="" maxlength="15" onkeyup="return ClearCallBackError('contactuserror')" onkeypress="return isNumberKey(event);"
+                       autocomplete="off"
+                       minlength="10" name="callusphone" id="callusphone" />
+            </div>
+
+                <span id="contactuserror"></span><button id="Button1" style="display:none;" type="submit" class="fieldButton"></button>
+                <button id="Button2new" type="button" class="fieldButton" onclick="return ProcessTopCallRequest();">Call Us Now !</button>
+
+            <span class="closeinstantcall" style="display: none">X</span>
+        </span>
+
+        </form>
+        <a href="#" id="btnCloseCallBack" onclick="return CloseHeaderCallBack()" class="closeit"><i class="fa fa-times"></i></a>
+    </div>
+    <a href="javascript:void(0)" class="btn btn-danger hidden" id="btnCloseHeaderProgress" onclick="return CloseHeaderProgress()" style="float:right">X</a>
+<style>
+
+    ul li {
+
+        margin-left: 0;
+    }
+</style>
+
+
+
+<div class="mob-connecting hidden" id="divCallBackProgressBarHeader" style="border: 0px solid #307fca; box-shadow: 0px 0px 0px 0px;">
+    
+    <div class="mob-connecting-left"><img src="/Content/images/call-connecting.jpg"></div>
+    <div class="mob-connecting-right">
+        <h2><span id="spanCallTextHeader">Call in Progress</span><span><img src="/Content/images/dot-animation.gif" alt="dot-animation"></span></h2>
+        <h3>Please answer when your phone rings. </h3>
+
+        <p>If you don't receive any call. Please make sure </p>
+        <ul>
+     
+            <li> Phone is Not on Voicemail</li>
+            <li> A Good Network Zone</li>
+        </ul>
+
+    </div>
+
+</div>
+
+  
+</div>
+<script>
+    $(document).ready(function () {
+        $('li a').removeClass("active");
+        var Menu = document.getElementById("hdnActiveMenu")
+        if (Menu != 'undefind' && Menu != null) {
+            switch (Menu.value) {
+                case "Home":
+                    {
+                        $(".flightMenu").addClass("active");
+                        break;
+                    }
+                case "AboutUs":
+                    {
+                        $(".AboutUsMenu").addClass("active")
+                        break;
+                    }
+
+                case "ContactUs":
+                    {
+                        $(".ContactUsMenu").addClass("active")
+                        break;
+                    }
+
+                case "Airlines":
+                    {
+                        $(".PopularAirMenu").addClass("active")
+                        break;
+                    }
+
+                case "Destinations":
+                    {
+                        $(".PopularDestMenu").addClass("active")
+                        break;
+                    }
+
+ case "BusinessClassDeals":
+                    {
+                        $(".BusinessClassMenu").addClass("active")
+                        break;
+                    }
+
+
+            }
+
+        }
+
+
+
+    });
+
+    function CloseHeaderCallBack()
+    {
+       
+        $("#divTopHeaderCallBack").removeClass("call-to-phone buttonondiv")
+        $("#divTopHeaderCallBack").addClass("call-to-phone")
+        $("#divCallBackTop").show();
+        
+    }
+
+    function CloseHeaderProgress() {
+        $(".callusbtn").click()
+        $("#divTopHeaderCallBack").removeClass("call-to-phone buttonondiv")
+        $("#divTopHeaderCallBack").addClass("call-to-phone")
+        $("#divCallBackTop").removeClass("hidden")
+        $("#divCallBackProgressBarHeader").addClass("hidden")
+        $("#btnCloseHeaderProgress").addClass("hidden")
+    }
+</script>
+
+        <!-- ! Auto Popup for all pages-->
+        
+
+    </header>
+
+    <div class="content-body">
+        
+
+
+
+<!-- BEGIN: PAGE TITLE SECTION -->
+<section style="background-image: url('/Content/pic/breadcrumbs/bg-1.jpg');" class="breadcrumbs">
+    <div class="container">
+        <div class="text-left breadcrumbs-item">            
+            <h2>Data Protection Policy</h2>
+        </div>
+    </div>
+</section>
+<!-- END: PAGE TITLE SECTION -->
+<!-- BEGIN: CONTENT SECTION -->
+<section>
+    <!-- START: ABOUT-US -->
+    <div class="row about-intro">
+        <div class="container clear-padding">
+            <div class="col-md-12 col-sm-12">
+                <div class="static-content">
+                    <p><strong>We are committed to protect your personal information and to respect your privacy.</strong></p>
+                    <ul>
+                        <li>We are transparent about the information that we collect and the way we use it.</li>
+                        <li>We use your information only for the purposes as described in our Privacy Policy. These include proffering services as requested while cementing your association with us.</li>
+                        <li>We use such information to understand you better and to come up with relevant offers for you.</li>
+                        <li>Where you choose to stop receiving our marketing messages, we will immediately act on your request and stop sending them. However, we will continue to send important information pertaining to any product or service that you have booked with us and keep you abreast about any changes for your travel itinerary.</li>
+                        <li>We have kept in place adequate measures for protecting your information and keeping it secure.</li>
+                        <li>We respect your data protection rights and thereby we aim to give you complete control over your personal information.</li>
+                    </ul>
+                    <p>You may access our complete terms for Data Protection Policy in the following paragraphs in order to understand how your personal information is used by us. Here we have explained in detail about the types of information that we collect, how we collect and use it, and with whom we may share this information.</p>
+
+                    <h4>What is meant by Personal Information?</h4>
+                    <p>Personal information refers to your details which identify you or used for identifying you. It may include your details like name and contact number, your purchase history and travel arrangements. It may further include information that indicates how you are using our website and mobile applications.</p>
+
+                    <h4>How we keep your personal information secure?</h4>
+                    <p>We take complete care for protecting your personal information that you share with us. So here are some points that you can remember to keep your information secure:</p>
+                    <ul>
+                        <li>Always keep your booking reference confidential. While you book your travel arrangements with us, we will give you a booking reference. It appears on your e-mail confirmation and in ticket of every person in your party for whom you may have booked the tickets.</li>
+                        <li>Someone having your booking reference may obtain access of your booking details through our system.</li>
+                        <li>In case you are travelling with other members and do not want others to access your booking details, then you must opt for separate bookings for every member.</li>
+                        <li>Always keep guard against any kind of Internet fraud and ‘phishing’. It is an internet fraud practice which refers to illegally gathering personal information through deception. Unsolicited e-mails may be sent to users, who, in turn, may be asked to enter or re-confirm bank details and passwords into a 'cloned' or illegal copy of a website.</li>
+                    </ul>
+
+                    <h4>What kind of personal information do we collect and retain?</h4>
+                    <p>While you avail our services, you will be required to share with us your personal details or the details of other members of your party for whom tickets are being booked. We collect the following types of personal information:</p>
+                    <ul>
+                        <li>Information that you share with us to complete and manage your booking or for any service that you may request with us.</li>
+                        <li>Your name, e-mail, contact details, address, date of birth, passport number, gender, account details and payment information.</li>
+                        <li>In case you purchase tickets for someone else, then we might need your billing information but may communicate directly with the passenger about the flight information.</li>
+                        <li>Booking details, travel itinerary, details of additional assistance as requested by you, and other travel-related details such as dietary requirements.</li>
+                        <li>Information related to the services that you may have availed through us in the past.</li>
+                        <li>Details for your earlier travel arrangements booked with us.</li>
+                        <li>Information pertaining to online registration and other such interactions.</li>
+                    </ul>
+                    <p>In order to personalize your information and enhance our website usage, we may collect some information related to your searches and the content that you may have viewed on our site. This is usually done using cookies and similar technologies. The information may pertain to internet banner advertisements and links appearing on the websites of our marketing partners.</p>
+                    <p>We may use your previous information related to web usage which is stored within the cookie for personalizing your experience and understanding you as a customer.</p>
+
+                    <h4>When and why do we gather ‘sensitive personal details’?</h4>
+                    <ul>
+                        <li>When you ask for specific medical support like wheelchair or oxygen assistance.</li>
+                        <li>Where you request specific medical assistance, such as oxygen or wheelchair assistance.</li>
+                        <li>Where you seek clearance for flying with a medical condition or if you are pregnant for over 28 weeks.</li>
+                    </ul>
+
+                    <h4>Why do we use your personal information?</h4>
+                    <p>The main reasons for using your personal information include</p>
+                    <ul>
+                        <li>For completing your travel arrangements and delivering the requested services. We will use your name, e-mail, permanent address, contact details, gender, date of birth, passport number, account details and payment information to process your booking.</li>
+                        <li>For providing services tailored as per your requirements and to give you a more personalized experience.</li>
+                        <li>For carrying out market research and analysis.</li>
+                        <li>For sending you service communications and status updates. We may share with you information related to our products and services via e-mail or text message.</li>
+                        <li>For improving our website, products and services.</li>
+                        <li>For providing you with consignment services, we might need to disclose some of your details to the service providers associated with the service that make up your consignment. These service providers may be based outside the UK/EEA. Further, we may disclose some information to third parties in relation to credit card processing, customer help, or other services.</li>
+                        <li>We may disclose your information if required by law, and where such request is made by a legal authority.</li>
+                        <li>For administrative and management purposes, we may keep track of the way you and other customers access and use our website. This enables us to come up with innovative ways to improve your website experience.</li>
+                        <li>You can choose to abstain from sharing some of the information that we request. However, this may result in some issues regarding completing your travel arrangements.</li>
+                    </ul>
+
+                    <h4>How long do we keep personal information?</h4>
+                    <p>We keep information of our users only till we need it for the required purpose of processing any booking. For example, if you book a travel arrangement with us, then we will keep your information pertaining to your booking to fulfil your request. Further, we will keep this information for a certain period to handle or respond to any queries, complaints or concerns related to your booking. We may also retain this information in order to improve your experience with us. We will actively review your details that we hold and delete it after some time. In some cases, we may anonymize it if there is no longer a business, legal or customer need for such information to be retained.</p>
+
+                    <h4>Who do we share your personal information with?</h4>
+                    <p>Your personal details could be shared with the partners/companies/alliances which we operate with. We share your information with them to let them assist us in rendering the requested services.</p>
+
+                    <h4>Access to your information and correction</h4>
+                    <p>You are entitled to request a copy of the information that we hold about you. This includes:</p>
+                    <ol>
+                        <li>Passenger or Agents name</li>
+                        <li>Passenger or Agents Phone and Fax numbers</li>
+                        <li>Passenger or Agents address</li>
+                        <li>Agents VAT and Affiliation numbers</li>
+                        <li>Passenger or Agents email address</li>
+                    </ol>
+                    <p>In case you need a copy of some or all of such information, then you may request for the same in writing at the following address.</p>
+
+                    <p><strong>SJR Travels</strong><br />
+                        Tower C -1011, Noida One Business Park, Plot B8, Sec 62 Noida (U.P) - 201301
+                    </p>
+                    <p>(A small charge may be levied for this service.)</p>
+                    <p>We need to ensure that your personal information is updated and correct. You may places a request with us for correcting or removing any information that you think is wrong. You may get in touch with us if you want to rectify any information already shared with us. We will need a maximum of 21 days to correct such errors.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END: ABOUT-US -->
+</section>
+<!-- END: CONTENT SECTION -->
+
+    </div>
+    
+    <!-- Footer Call back-->
+
+
+<style>
+    .anodisp {
+        display: none;
+    }
+</style>
+
+<div class="footer_call">
+
+    <div class="footer_pp" style="display: none;">
+       
+        <div class="p_h">
+            <img src="/Content/images/fav.png" alt="" border="0" />
+        </div>
+
+        <h2>Exclusive deals<span>Speak to our expert</span></h2>
+                     
+           <div id="divCallBackTextInfo">
+            
+            <div class="footer-telno" style="margin: 0px -10px">
+            <a href="tel:+91-971-700-7657"
+            ><span
+              ><i class="flaticon-suntour-phone"></i>A Single Call Solves Everything</span
+            ></a
+          >
+            
+            <a href="tel:+91-971-700-7657"
+              ><span
+                ><i class="flaticon-suntour-phone"></i>+91-971-700-7657</span
+              ></a
+            >
+            <span class="onecalltext">Calls answered in 5 seconds</span>
+          </div>
+
+            <div class="ortext">OR</div>
+            <p>For a free & immediate callback, enter your number below and we will call you in 5 seconds.</p>
+
+            </div>
+
+            <form id="form1" action="/contact" method="post" autocomplete="off">
+
+                <input type="hidden" id="hdnCallMeB" name="FormType" value="CallOus" />
+
+                <div id="tab1">
+
+                    <div id="divCallBackBoxHome">
+
+                     
+                        <span class="font-4">
+                            <b class="call-bycountry">+91</b>
+                            <input class="anodisp" name="countrycode" type="text">
+                            <input type="tel" title="Enter 10-15 digits phone number" onkeyup="return ClearCallBackError('contactuserror1')" pattern="\d*"
+                                   required placeholder="Enter 10-15 digits number" value="" maxlength="15"
+                                   onkeypress="return isNumberKey(event);" minlength="10" name="callusphone" id="callusphone1" />
+                            <span id="contactuserror1"></span><button id="Button11" style="display:none;" type="submit" class="fieldButton"></button>
+                            <span class="closeinstantcall" style="display: none">X</span>
+                        </span>
+
+                        <a id="btnCallmeNow" href="javascript:void(0)" class="fieldButton callmenow active" style="width:100%" onclick="return ProcessFooterCallRequest();">Call Us Now !</a>
+
+                    </div>
+                    <a href="javascript:void(0)" class="btn btn-danger" id="btnCloseFooterProgress" onclick="return CloseFooterProgress()" style="float:right; display:none">X</a>
+
+<style>
+
+    ul li {
+
+        margin-left: 0;
+    }
+</style>
+
+
+
+<div class="mob-connecting hidden" id="divCallBackProgressBarHome" style="border: 0px solid #307fca; box-shadow: 0px 0px 0px 0px;">
+    
+    <div class="mob-connecting-left"><img src="/Content/images/call-connecting.jpg"></div>
+    <div class="mob-connecting-right">
+        <h2><span id="spanCallTextHome">Call in Progress</span><span><img src="/Content/images/dot-animation.gif" alt="dot-animation"></span></h2>
+        <h3>Please answer when your phone rings. </h3>
+
+        <p>If you don't receive any call. Please make sure </p>
+        <ul>
+     
+            <li> Phone is Not on Voicemail</li>
+            <li> A Good Network Zone</li>
+        </ul>
+
+    </div>
+
+</div>
+
+
+                    
+                </div>
+
+
+
+            </form>
+
+        </div>
+   
+    <div class="showmsg" style="display: none;"><span id="lblMsg3"></span><i class="fa fa-times" aria-hidden="true"></i></div>
+  
+    <i class="fa fa-phone" aria-hidden="true">
+        <div class="phonering-alo-phone phonering-alo-green phonering-alo-show" id="phonering-alo-phoneIcon" style="margin-top: -60px; position: absolute; left: -70px; top: -13px; /* width: 20px; */">
+            <div class="phonering-alo-ph-circle"></div>
+            <div class="phonering-alo-ph-circle-fill"></div>
+            <a class="pps-btn-img">
+                <div class="phonering-alo-ph-img-circle"></div>
+            </a>
+        </div>
+    </i>
+    <i class="crs" style="display: none;">X</i>
+    <span class="call_txt" style="display: none;">Would you like a free callback in 5 Seconds. <i class="fa fa-times" aria-hidden="true"></i></span>
+</div>
+
+
+<script type="text/javascript">
+                
+    function ProcessCallLater() {
+        var phoneNumber = $("#callusphone1").val().trim();
+        var Datev = $("select[name='ddlCallBackDate']").val();//'2019-03-08';
+        var Timev = $("select[name='ddlCallBackTime']").val();//'10:40';
+        $("#hdnCallMeB").val("CallBackLater");
+        $("#hdnCallLaterDate").val(Datev);
+        $("#hdnCallLaterTime").val(Timev);
+        var isPhoneNoExist = false;
+        if (phoneNumber == "") {
+            $("#contactuserror1").html("Please enter phone number.");
+            return false;
+        }
+        if (Datev == "") {
+            $("select[name='ddlCallBackDate']").html("Please select date.");
+            return false;
+        }
+        if (Timev == "") {
+            $("select[name='ddlCallBackTime']").html("Please select time.");
+            return false;
+        }
+        if (!validatePhone(phoneNumber)) {
+            $("#contactuserror1").html("Please provide valid phone number.");
+            return false;
+        }
+
+        $.ajax({
+            url: "/FooterLinks/CheckPhoneExist?callDate=" + Datev + "&callTime=" + Timev + "&callType=SHBC&phoneNo=" + phoneNumber,
+            type: "GET",
+            cache: false,
+            dataType: "json",
+            contentType: 'application/json; charset=utf-8',
+            beforeSend: function () {
+                $("#btnScheduleCallNow").html('Please wait...');
+                $("#btnScheduleCallNow").attr('disabled', true).css("cursor", "no-drop");
+            },
+            success: function (data) {
+                if (data.IsNumberExist == "Yes") {
+                    document.getElementById("spnScheduleNumber").innerText = phoneNumber;
+                    document.getElementById("spnScheduleTime").innerText = data.RecentDate;
+                    $('#hdnConfirmationSource').val("HomeCallLater");
+                    $('#blkoverlay1').show();
+                    $('#divScheduleCallPopup').show();
+                }
+                else if (data.IsNumberExist == "No") {
+                    $("#form1").submit();
+                    $('input[name="callusphone"]').val('')
+                }
+                $("#btnScheduleCallNow").html('Schedule Callback !');
+                $("#btnScheduleCallNow").removeAttr('disabled').removeAttr("style");;
+            },
+            error: function (err) {
+                console.log(err);
+                $("#btnScheduleCallNow").html('Schedule Callback !');
+                $("#btnScheduleCallNow").removeAttr('disabled').removeAttr("style");;
+            }
+        });
+    }
+
+    function onDateChange(selecteddate) {
+        $.getJSON("/FooterLinks/GetTimeSegments", { date: $("#" + selecteddate.id).val() },
+         function (data) {
+             $("#callbackTime").html("");
+             $("#callbackTime").html(data.ResponseView)
+         }
+         );
+        return false;
+
+    }
+
+    function BacktoCallMeNow() {
+        $("#tab2").removeClass('showtab').addClass('hidetab');
+        $("#tab1").removeClass('hidetab').addClass('showtab');
+        $('#btnCallmeNow').addClass('active');
+    }
+
+    function ProcessFooterCallRequest()
+    {
+        var phoneNumber = $("#callusphone1").val().trim();
+        var isPhoneNoExist = false;
+        if (phoneNumber == "") {
+            $("#contactuserror1").html("Please enter phone number.");
+            $("#callusphone1").focus();
+            return false;
+        }
+        else if (validateMobileZeroStart('callusphone1', 'contactuserror1', 'Phone number cannot be start with zero') == false) {
+            return false;
+        }
+        if (!validatePhone(phoneNumber)) {
+            $("#contactuserror1").html("Please provide valid phone number.");
+            return false;
+        }
+        $.ajax(
+         {
+            url: "/FooterLinks/CheckPhoneExist?callType=CMB&phoneNo=" + phoneNumber,
+            type: "GET",
+            cache: false,
+            dataType: "json",
+            contentType: 'application/json; charset=utf-8',
+            beforeSend: function ()
+            {
+                $("#btnCallmeNow").html('Please wait...');
+                $("#btnCallmeNow").attr('disabled', true).css("cursor", "no-drop");;
+            },
+            success: function (data)
+            {                                    
+                if (data.IsNumberExist == "Yes")
+                {
+                    document.getElementById("cbNumber").innerText = phoneNumber;
+                    document.getElementById("dtCbtime").innerText = data.RecentDate;
+                    $('#hdnConfirmationSource').val("Home");
+                    $('#blkoverlay1').show();
+                    $('#confirmationPopup').show();
+                }
+                else if (data.IsNumberExist == "No")
+                {
+                    AcceptCallUsOption();
+                  
+                }
+                else if (data.IsNumberExist == "Blocked")
+                {
+                    document.getElementById("cbNumber").innerText = phoneNumber;
+                    document.getElementById("dtCbtime").innerText = data.RecentDate;
+                    $('#hdnConfirmationSource').val("Home1");
+                    $('#blkoverlay1').show();
+                    $('#ipblockpopup').show();
+                }
+                $("#btnCallmeNow").html('Call Us Now !');
+                $("#btnCallmeNow").removeAttr('disabled').attr("style","width:100%");
+
+            },
+            error: function (err) {
+                console.log(err);
+                $("#Button22new").html('Call Us Now !');
+                $("#Button22new").removeAttr('disabled').removeAttr("style");;
+            }
+        });
+    }
+
+    function CancelScheduleCallOption()
+    {
+        $('#blkoverlay1').hide();
+        $('#divScheduleCallPopup').hide();
+        $('input[name="callusphone"]').val('')
+        window.location.reload();
+    }
+
+    function ValidateCallMeLater() {
+        var phoneNumber = $("#callusphone1").val().trim();
+
+        if (phoneNumber == "") {
+            $("#contactuserror1").html("Please enter phone number.");
+            $("#callusphone1").focus();
+            return false;
+        }
+        else if (validateMobileZeroStart('callusphone1', 'contactuserror1', 'Phone number cannot be start with zero') == false) {
+
+            return false;
+        }
+        else {
+            $("#tab1").removeClass('showtab').addClass('hidetab');
+            $("#tab2").removeClass('hidetab').addClass('showtab');
+            $('#btnScheduleCallNow').addClass('active');
+
+        }
+
+    }
+
+    function closeCallBackProgress()
+    {
+        $("#divCallBackTextInfo").show();
+        $("#divCallBackProgreessBarHome").hide();
+        $("#divCallBackBoxHome").show();
+        $(".crs").show();
+        $(".crs").click();
+        $("#form1").reset();
+    }
+
+</script>
+
+<style>
+    .footer_call i.closeCallBack
+   {
+       background-color: #ff0000;
+    font-size: 17px;
+    /* line-height: 54px; */
+    border-radius: 42px;
+    /* box-shadow: inset 0 61px 4px #037eb4; */
+    /* animation: 5s infinite beatHeart; */
+    /* animation-timing-function: ease; */
+    /* animation-timing-function: ease-in-out; */
+    /* display: none; */
+    width: 34px;
+    height: 30px;
+}
+</style>
+
+    <!-- Footer Call back-->
+
+     <footer class="footer">
+      <div class="footerContinZer">
+        <footer class="footer">
+          <div class="footerTop">
+            <div class="container">
+              <div class="row pb-md-10">
+                
+
+                <div class="col-md-2 col-sm-7 fotterLinkforMobile">
+                  <div class="widget-footer impLink">
+                    <h4>Important Links</h4>
+                    <div class="widget-tags-wrap">
+                      <a href="/about.html" rel="tag" class="tag">About Us</a>
+                      <a href="/contact.html" rel="tag" class="tag"
+                        >Contact Us</a
+                      >
+                      <a href="/faqs.html" rel="tag" class="tag">FAQs</a>
+                      <a href="/traveladvice.html" rel="tag" class="tag"
+                        >Travel Advice</a
+                      >
+                      <a href="/sitemap.html" rel="tag" class="tag">Site Map</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-2 col-sm-7 fotterLinkforMobile">
+                  <div class="widget-footer impLink">
+                    <h4>Legal</h4>
+                    <div class="widget-tags-wrap">
+                      <a href="/privacy.html" rel="tag" class="tag">Privacy</a>
+                      <a
+                        href="/terms.html"
+                        rel="tag"
+                        class="tag"
+                        target="_blank"
+                        >Terms
+                      </a>
+                      <a href="/disclaimer.html" rel="tag" class="tag"
+                        >Disclaimer
+                      </a>
+                      <a href="/dataprotection.html" rel="tag" class="tag"
+                        >Data Protection Policy</a
+                      >
+                      <a href="/cookies.html" rel="tag" class="tag"
+                        >Cookies Policy</a
+                      >
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-2 col-sm-6 mb-sm-30 hideformobile">
+                  <div class="widget-footer">
+                    <h4>Destinations</h4>
+                    <div class="widget-tags-wrap">
+                      <a
+                        href="/destination/arunachal-pradesh.html"
+                        rel="tag"
+                        class="tag"
+                        onclick="return GetDestination('/destination/arunachal-pradesh', 'Menu')"
+                        >Arunachal Pradesh</a
+                      >
+                      <a
+                        href="/destination/maharashtra.html"
+                        rel="tag"
+                        class="tag"
+                        onclick="return GetDestination('/destination/maharashtra', 'Menu')"
+                        >Maharashtra</a
+                      >
+                      <a
+                        href="/destination/himachal-pradesh.html"
+                        rel="tag"
+                        class="tag"
+                        onclick="return GetDestination('/destination/himachal-pradesh', 'Menu')"
+                        >Himachal Pradesh</a
+                      >
+                      <a
+                        href="/destination/assam.html"
+                        rel="tag"
+                        class="tag"
+                        onclick="return GetDestination('/destination/assam', 'Menu')"
+                        >Assam</a
+                      >
+                      <a
+                        href="/destination/kashmir.html"
+                        rel="tag"
+                        class="tag"
+                        onclick="return GetDestination('/destination/kashmir', 'Menu')"
+                        >Kashmir</a
+                      >
+                    </div>
+                  </div>
+                </div>
+
+                 <div class="col-md-2 col-sm-7 hideformobile">
+                  <div class="widget-footer impLink">
+                    <h4>Our Services</h4>
+                    <div class="widget-tags-wrap">
+                      <a
+                        href="services/pilgrimage.html"
+                        rel="tag"
+                        class="tag"
+                        >Pilgrimage Bookings </a
+                      >
+                      <a
+                        href="services/adventure-packages.html"
+                        rel="tag"
+                        class="tag"
+                        > Himachal Expedition </a
+                      >
+
+                      <a
+                        href="services/hotels.html"
+                        rel="tag"
+                        class="tag"
+                        >Relaxing Stays</a
+                      >
+
+                      <a href="services/cabs.html" rel="tag" class="tag"
+                        >Cab Rentals</a
+                      >
+                      <a href="services/group-tours.html" rel="tag" class="tag"
+                        >Groups Travel</a
+                      >
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6 mb-sm-30 contactus-footer">
+                  <div class="socialLinkHolder">
+                    <h2>Connect with Us</h2>
+                    <div class="social">
+                      <a
+                        class="social-icon fb"
+                        target="_blank"
+                        data-tooltip="Facebook"
+                        href="https://www.facebook.com/sjrtravelsuk"
+                      >
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                      </a>
+                      <a
+                        class="social-icon tw"
+                        target="_blank"
+                        data-tooltip="Twitter"
+                        href="https://twitter.com/sjrtravelsuk"
+                      >
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                      </a>
+
+                      <a
+                        class="social-icon insta"
+                        target="_blank"
+                        data-tooltip="Instagram"
+                        href="https://www.instagram.com/sjrtravelsuk"
+                      >
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                      </a>
+                    </div>
+<div class="social">
+                      <a href="https://www.iata.org/">
+                    <img src="/Content/images/iata.jpg" width="200px" style="height: 80px; margin-left: 7px;" alt="International Air Transport Association">
+                  </a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+
+        <div class="footerBottom">
+          <div class="container">
+            <div class="footerWhitesec">
+              <div class="website-operated">
+                This website is operated by SJR Travels Limited,Company Number
+                14498022 is a company registered at 114/115 first floor pocket 20 sector 24 Rohini Delhi -110085, India
+                which is recoginised by,
+                <a
+                  href="https://www.iata.org/"
+                  style="font-weight: 800; color: #000000"
+                  >International Air Transport Association</a
+                >.
+              </div>
+            </div>
+            <div class="footer-visalogo">
+              <p style="color: #000; font-size: 12px; font-weight: bold">
+                © Copyright 2023 sjrtravels.com | All Rights Reserved
+              </p>
+              <div class="footerLogo">
+                <div class="securebooking1">
+                  <img
+                    src="/Content/images/visa-logo2.png"
+                    alt="visa"
+                    class="visalogo"
+                  />
+
+                  <img src="/Content/images/card-img.jpg" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+ <div class="container">
+     <div class="callicon call-mobile">
+         <div class="imgholder">
+             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 437.6 437.6" style="enable-background: new 0 0 437.6 437.6;" xml:space="preserve" width="512px" height="512px">
+             <g>
+             <g>
+             <g>
+             <path d="M264.6,300.4h-92C97,300.4,35.4,362,35.4,437.6h366.8C401.8,362.4,340.2,300.4,264.6,300.4z" fill="#FFFFFF" />
+             <path d="M235,237.6c7.2,0,14,2.4,19.2,6.8h33.2c16.4-17.2,26.4-40,26.4-65.6c0-52.8-42.8-95.2-95.2-95.2s-95.2,42.4-95.2,95.2     c0,35.6,19.6,66.8,48.8,83.2c3.2-14,15.6-24.4,30-24.4H235z" fill="#FFFFFF" />
+             <path d="M77.8,186.8c1.2,10,6,19.2,12.8,26c5.2,5.2,12,9.2,19.6,11.6c-0.4-1.6-0.4-3.2-0.4-4.4v-77.6c0-1.6,0-3.2,0.4-4.8     c-7.6,2-14,6-19.6,11.6c-0.4,0.4-1.2,1.2-1.6,1.6v-3.2c0-7.6,0.8-15.2,2-22.4c1.2-7.6,3.2-14.8,6-21.6c2.4-7.2,5.6-14,9.6-20.4     c3.6-6.4,8-12.8,12.8-18.4c0.4-0.4,0.8-1.2,0.8-1.6c3.6,0.4,7.2-0.8,9.6-3.2c24.4-24.4,56.4-36.4,88-36.4c31.6,0,64,12,88,36.4     c2.8,2.8,6.4,3.6,9.6,3.2c0.4,0.4,0.4,1.2,0.8,1.6c4.8,5.6,9.2,12,12.8,18.4c3.6,6.4,6.8,13.2,9.6,20.4c2.4,7.2,4.4,14.4,6,22     c1.2,7.2,2,14.8,2,22.4v3.2c-0.4-0.8-1.2-1.2-1.6-1.6c-5.2-5.2-12-9.2-19.6-11.6c0.4,1.6,0.4,3.2,0.4,4.8V220     c0,1.6,0,3.2-0.4,4.4c2-0.4,4-1.2,6-2v25.2c0,2.8-0.4,5.6-0.8,7.6c-0.4,2-1.2,3.2-2,4.4c-0.8,0.8-2,1.6-3.2,2     c-1.6,0.4-3.2,0.8-5.2,0.8h-0.4h-73.6c-2.4-4-6.4-6.8-11.6-6.8h-32.8c-7.2,0-12.8,6-12.8,12.8c0.4,7.2,6,12.8,13.2,12.8H235     c4.8,0,9.2-2.8,11.6-6.8H321h2.8c2.8,0,5.2-0.8,7.6-1.6c3.2-1.2,5.6-2.8,8-5.2c2-2.4,3.6-5.2,4.8-8.8c0.8-3.2,1.6-7.2,1.6-11.6     v-32V214c0.4-0.4,0.8-0.8,1.2-1.2c6.8-6.8,11.6-16,12.8-26c0.4-0.4,0.8-0.4,0.8-0.8c1.2-1.2,2-3.2,2-4.8V148     c0-8.4-0.8-16.8-2-24.8c-2.4-8.4-4.4-16.4-7.2-24.4c-2.8-8-6.4-15.6-10.8-22.8c-4-7.2-8.8-14-14.4-20.4c-0.4-0.8-1.2-1.2-2-1.6     c0.8-3.6-0.4-8-3.2-10.8C294.2,14.4,256.6,0,218.6,0S143,14.4,113.8,43.2c-2.8,2.8-4,7.2-3.2,10.8c-0.8,0.4-1.2,0.8-2,1.6     C103,62,98.2,68.8,94.2,76s-7.6,14.8-10.8,22.8c-2.8,8-5.2,16-6.4,24.4c-1.6,8-2,16.4-2,24.8v33.2c0,2,0.8,3.6,2,4.8     C77.4,186.4,77.8,186.4,77.8,186.8z" fill="#FFFFFF" />
+                        </g>
+                    </g>
+                </g>
+            </svg>
+         </div>
+         <div class="callInfo">
+             <h3>How may we help you? <i class="fa fa-times" aria-hidden="true"></i></h3>
+             <form id="form3" method="post" action="/contact">
+                 <input type="hidden" id="hdnGetInTouch" name="FormType" value="GetInTouch" />
+                 <ul>
+                     <li>
+                         <input class="inputField inName" onkeyup="hideDivErr()" onkeypress="    return isCharKey(event)" type="text" id="rf_name" placeholder="Full Name" name="Name" maxlength="40" />
+                         <span class="error" id="dvNameRf" style="display: none;">Please enter your full name</span>
+                     </li>
+                     <li>
+                         <input class="inputField inEmail" onkeyup="hideDivErr()" type="text" id="rf_email" placeholder="Email ID" name="Email" maxlength="80" />
+                         <span class="error" id="dvMailRf" style="display: none;">Please enter your email id</span>
+                         <span class="error" id="dvMailRf1" style="display: none;">Please enter valid email id</span>
+                     </li>
+                     <li>
+                         <input class="inputField inPhone" onkeyup="hideDivErr()" onkeypress="return isNumberKey(event)" type="text" id="rf_phone" placeholder="Phone Number" name="Phone" maxlength="15" />
+                         <span class="error" id="dvPhoneRf" style="display: none;">Please enter your phone number</span>
+                         <span class="error" id="dvPhoneRf1" style="display: none;">Please enter correct phone number</span>
+                     </li>
+                     <li id="divContactSource">
+                         <input class="inputField " onkeyup="hideDivErr()" onkeypress="" type="text" id="tbSource" placeholder="contact source" name="ContactSource" maxlength="50" value="" />
+
+                     </li>
+                     <li id="divContactCampaign">
+                         <input class="inputField " onkeyup="hideDivErr()" onkeypress="" type="text" id="tbCampaign" placeholder="contact campaign" name="ContactCampaign" maxlength="50" value="online" />
+
+                     </li>
+                     <li>
+                         <textarea name="Comment" rows="3" id="rf_Comment" placeholder="Message" class="inputField" maxlength="250" style="line-height:20px;"></textarea>
+                     </li>
+                     <li>
+                         <button id="Button2" type="submit" class="emailbtn" onclick="return MailValidate();">Submit</button>
+                     </li>
+                 </ul>
+             </form>
+         </div>
+     </div>
+ </div>
+    <div id="lblSubscribe" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+
+                <div class="modal-body">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">
+                        Close
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="scroll-top"><i class="fa fa-angle-up"></i></div>
+    <div class="confirmationPopup" id="confirmationPopup">
+        <p>
+            We have already recieved a call back from phone number <br />
+            <span id="cbNumber"><i class="flaticon-suntour-phone"></i> 9802348392</span> at
+            <span id="dtCbtime">4 dec 2018 19:38 pm</span>.
+            <br /> <b>Do you want to receive a call back again?</b>
+        </p>
+
+        <div class="btnHolder">
+            <button id="btnCallUsYes" class="yesBtn" onclick="AcceptCallUsOption()">Yes</button>
+            <button id="btnCallUsNo" class="noBtn" onclick="CancelCallUsOption()">No</button>
+        </div>
+
+    </div>
+
+    <input type="hidden" id="hdnConfirmationSource" value="Home" />
+
+    <!-- Blocked Popup-->
+    <div id="ipblockpopup" class="modal" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+
+                <div class="modal-body">
+                    <div class="ibblockbg"><img src="/Content/images/logo.gif" style="animation-iteration-count: infinite;"  alt="SJR Travels"></div>
+                    <p>
+                        Your <strong>IP and/or Phone Number</strong> found suspicious and under screening. Please wait to continue.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" onclick="CloseBlockedPopup()" data-dismiss="modal">
+                        <i class="fa fa-times" aria-hidden="true"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ! footer-->
+
+    
+    <script src="/Content/js/script.js"></script>
+<script src="/Content/js/custom.js"></script>
+
+    
+    <script>
+        $(function () {
+            $("#divContactSource").hide();
+            $("#divContactCampaign").hide();
+        })
+    </script>
+    <style>
+        .divPopUpMg1 {
+            padding: 5%;
+        }
+
+            .divPopUpMg1 h2 {
+                font-size: 40px;
+                color: green;
+                padding-bottom: 10px;
+            }
+
+            .divPopUpMg1 p {
+                font-size: 20px;
+                padding-bottom: 30px;
+            }
+        /*Validation*/
+    </style>
+
+    <script type="text/javascript">
+
+        function OnlyCharNumberKey(event)
+        {
+            var regex = new RegExp("[a-zA-Z0-9]");
+            var key = event.keyCode || event.which;
+            key = String.fromCharCode(key);
+            if (!regex.test(key) && key.charCodeAt(0) > 32)
+            {
+                event.returnValue = false;
+                if (event.preventDefault)
+                {
+                    event.preventDefault();
+                }
+            }
+        }
+
+        function OnlyCharacterKey(event)
+        {
+            var regex = new RegExp("[a-zA-Z]");
+            var key = event.keyCode || event.which;
+            key = String.fromCharCode(key);
+            if (!regex.test(key) && key.charCodeAt(0) > 32) {
+                event.returnValue = false;
+                if (event.preventDefault) {
+                    event.preventDefault();
+                }
+            }
+        }
+
+        function NumberKeyWithDecimal(event) {
+
+            var regex = new RegExp("[0-9.]");
+            var key = event.keyCode || event.which;
+            key = String.fromCharCode(key);
+
+            if (!regex.test(key) && key.charCodeAt(0) > 32) {
+                event.returnValue = false;
+                if (event.preventDefault) {
+                    event.preventDefault();
+                }
+            }
+        }
+
+        function isCharKey(evt) {//Olny letters (a-z and A-Z), spaces,brcket(), hyphen(-) and  _ characters
+            if ((event.keyCode == 33) || (event.keyCode == 34) || (event.keyCode == 36) || (event.keyCode == 37) || (event.keyCode == 38) || (event.keyCode == 42) || (event.keyCode == 47) || (event.keyCode == 48) || (event.keyCode == 49) || (event.keyCode == 50) || (event.keyCode == 50) || (event.keyCode == 51) || (event.keyCode == 52) || (event.keyCode == 53) || (event.keyCode == 54) || (event.keyCode == 55) || (event.keyCode == 56) || (event.keyCode == 57) || (event.keyCode == 60) || (event.keyCode == 62) || (event.keyCode == 63) || (event.keyCode == 64) || (event.keyCode == 92) || (event.keyCode == 94) || (event.keyCode == 96) || (event.keyCode == 124) || (event.keyCode == 126))
+            {
+                return false;
+            }
+            else {
+                return true;
+            }
+        }
+
+        function isNumberKey(evt) {
+            var charCode = (evt.which) ? evt.which : event.keyCode
+            if (charCode > 31 && (charCode < 48 || charCode > 57))
+                return false;
+
+            return true;
+        }
+
+        function hideDivErr() {//onchange="hideDivErr();"
+            document.getElementById("dvNameRf").style.display = "none";
+            document.getElementById("dvMailRf").style.display = "none";
+            document.getElementById("dvMailRf1").style.display = "none";
+            document.getElementById("dvPhoneRf").style.display = "none";
+            document.getElementById("dvPhoneRf1").style.display = "none";
+        }
+
+        function MailValidate() {
+
+            var IsValid = true;
+            var vName = document.getElementById("rf_name").value;
+            var vemail = document.getElementById("rf_email").value;
+            var vphone = document.getElementById("rf_phone").value;
+            if (vName == "") {
+                document.getElementById("dvNameRf").style.display = "block";
+                document.getElementById("rf_name").focus();
+                IsValid = false;
+            }
+            else if (vemail == "") {
+                document.getElementById("dvMailRf").style.display = "block";
+                document.getElementById("rf_email").focus();
+                IsValid = false;
+            }
+            else if (!validateMail(vemail)) {
+                document.getElementById("dvMailRf1").style.display = "block";
+                document.getElementById("rf_email").focus();
+                IsValid = false;
+                document.getElementById("dvPhoneRf").style.display = "none";
+            }
+            else if (vphone == "") {
+                document.getElementById("dvPhoneRf").style.display = "block";
+                document.getElementById("rf_phone").focus();
+                IsValid = false;
+            }
+            else if (startsWith(vphone, "00"))
+            {
+                document.getElementById("dvPhoneRf").style.display = "block";
+                document.getElementById("dvPhoneRf").innerText = "Phone number cannot be start with zero";
+                document.getElementById("rf_phone").focus();
+                IsValid = false;
+            }
+            else if (!validatePhone(vphone)) {
+                document.getElementById("dvPhoneRf1").style.display = "block";
+                document.getElementById("rf_phone").focus();
+                IsValid = false;
+            }
+
+            if (IsValid) {
+                $("#Button2").html("Please wait...");
+                $("#Button2").attr('disabled', true).css("cursor", "no-drop");
+                $("#form3").submit();
+                return true;
+            }
+            else {
+                return false;
+            }
+        }
+
+        function validateMail(vemail) {
+            if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(vemail)) {
+                return true;
+            }
+            else {
+                return false;
+            }
+        }
+
+        function validatePhone(ipphone) {
+            if (ipphone.length >= 10 && ipphone.length <= 15) 
+            {
+                if (startsWith(ipphone, "00")) {
+                    return false;
+                }
+                else
+                {
+                    return true;
+                }
+            }
+            else 
+            {
+                return false;
+            }
+        }
+
+        function startsWith(str, word) {
+            return str.lastIndexOf(word, 0) === 0;
+        }
+
+
+        function CheckMobile() {
+            var vMobNum = document.getElementById("Mobile").value;
+            if (vMobNum != "") {
+                if (vMobNum.length >= 10 && ipphone.length <= 15) {
+                    document.getElementById("dvMobileErr").style.display = "none";
+                    return true;
+                }
+                else {
+                    document.getElementById("dvMobileErr").style.display = "block";
+                    return false;
+                }
+            }
+            else {
+                document.getElementById("dvMobileErr").style.display = "block";
+                return false;
+            }
+        }
+
+        function hideMobileErr() {
+            document.getElementById("dvMobileErr").style.display = "none";
+        }
+            function ClearGetInTouch()
+        {
+                $("#rf_name,#rf_email,#rf_phone,#rf_Comment").val("");
+                hideDivErr();
+              
+            }
+    </script>
+    <script type="text/javascript">
+        // Set timeout variables.
+        //var timoutWarning = 600; // Display warning in 1 Mins.
+        //var timoutNow = 1200; // Timeout in 2 mins.
+        var timoutWarning = 3000; // Display warning in 1 Mins.
+       // var timoutNow = 1200000; // Timeout in 2 mins.
+        var warningTimer;
+      //  var timeoutTimer;
+
+        // Start timers.
+        function StartTimers() {
+            //warningTimer = setTimeout("IdleWarning()", timoutWarning);
+           // timeoutTimer = setTimeout("IdleTimeout()", timoutNow);
+        }
+
+        // Reset timers.
+        function ResetTimers()
+        {
+            //clearTimeout(warningTimer);
+            //clearTimeout(timeoutTimer);
+            //StartTimers();
+            //$("#timeout").dialog('close');
+        }
+
+        // Show idle timeout warning dialog.
+        function IdleWarning()
+        {
+            $("#timeout").dialog({
+                modal: true
+            });
+        }
+    </script>
+    <script type="text/javascript">
+
+        function CheckCookiesStatus() {
+
+            if (navigator.cookieEnabled)
+            {
+                HideCookiesModal();
+                getCookiesStatus();
+            }
+            else
+            {
+                CallCookiesModal();
+            }
+        }
+
+        function IsCookiesEnabled()
+        {
+            HideCookiesModal();
+            location.reload();
+            if (navigator.cookieEnabled) {
+                HideCookiesModal();
+            }
+            else {
+                CallCookiesModal();
+            }
+        }
+
+        function HideCookiesModal() {
+            $("#dvCheckCookies").hide();
+        }
+
+        function CallCookiesModal() {
+            $("#dvCheckCookies").dialog({
+                modal: true
+            });
+        }
+
+        function CallAcceptPopup() {
+            $("#dvAcceptCookies").show()
+        }
+
+        function HideAcceptPopup() {
+            $("#dvAcceptCookies").hide();
+        }
+
+        function CloseAcceptPopup() {
+            if (navigator.cookieEnabled) {
+                HideAcceptPopup();
+                getCookiesStatus();
+            }
+            else {
+                CallAcceptPopup();
+            }
+        }
+
+        function AllowCookies() {
+            if (navigator.cookieEnabled) {
+
+                setCookies();
+                HideAcceptPopup();
+            }
+            else {
+                CallAcceptPopup();
+            }
+        }
+
+        function getCookiesStatus() {
+
+            if (typeof (Storage) !== "undefined")
+            {
+                if (navigator.cookieEnabled)
+                {
+                    if (localStorage.length > 0)
+                    {//("TU_TnC_CookiesData", "TU Term And Condition Cookies Data");
+                        if (localStorage.getItem("TU_TnC_CookiesData") != null && localStorage.getItem("TU_TnC_CookiesData") != undefined && localStorage.getItem("TU_TnC_CookiesData") != "")
+                        {
+                            HideAcceptPopup();
+                        }
+                        else
+                        {
+                            CallAcceptPopup();
+                        }
+                    }
+                    else
+                    {
+                        CallAcceptPopup();
+                    }
+                }
+                else
+                {
+                    CallCookiesModal();
+                }
+            }
+            else
+            {
+                CallCookiesModal();
+            }
+        }
+
+        function setCookies() {
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function () {
+                if (this.readyState == 4 && this.status == 200) {
+                    localStorage.setItem("TU_TnC_CookiesData", "TU Term And Condition Cookies Data");
+                }
+            };
+            xhttp.open("GET", "/Flight/SetCookies?Type=SetStatus", true);
+            xhttp.send();
+        }
+     
+    </script>
+
+    <script>
+
+        function CloseTimeOutCallBack()
+        {
+            $("#btnCloseTimeOutCallBack").hide();
+            $("#divCallBackProgressBarTimeOut").addClass("hidden");
+            $("#divCBTimeout").removeClass("hidden");
+            $('#timeoutBox').dialog('close')
+            $(".ui-dialog-titlebar-close").removeClass("hidden");
+            $(".ui-dialog-titlebar-close").click();
+           
+            
+        }
+        function AcceptCallUsOption()
+        {
+            var TimeOut = 120000;
+            $(".blkoverlay1").hide();
+            $('#confirmationPopup').hide();
+
+            //=============Call Back Footer Desktop==================
+            if ($("#hdnConfirmationSource").val() == "" || $("#hdnConfirmationSource").val() == "Home")
+            {
+                PostCallBackRequest("form1");
+                
+                $("#blkoverlay1").show();            
+                $("#divCallBackProgressBarHome").removeClass("hidden");
+                $("#divCallBackBoxHome").hide();
+                $("#divCallBackTextInfo").hide();
+                $(".crs").hide();
+                $(".call_txt").hide();
+
+                $("#btnCloseFooterProgress").show();
+                
+                ShowCallProgressStatus("spanCallTextHome");
+                
+                setTimeout(function ()
+                {
+                    $("#btnCloseFooterProgress").hide();
+                    $(".crs").show();        
+                    $("#blkoverlay1").hide();
+                    $("#divCallBackTextInfo").show();
+                    $("#divCallBackBoxHome").show();
+                    $(".crs").click();
+                    $("#divCallBackProgressBarHome").addClass("hidden");
+                    document.getElementById("form1").reset();
+                }, parseInt(TimeOut))
+
+            }
+            //=============Call Back Top Desktop==============
+            else if ($("#hdnConfirmationSource").val() == "HomeCallBackTop")
+            {
+                PostCallBackRequest("formCallOus");
+
+                $("#divCallBackProgressBarHeader").removeClass("hidden");
+                $("#btnCloseHeaderProgress").removeClass("hidden");
+                
+                $("#divCallBackTop").addClass("hidden");
+                $(".closeit").addClass("hidden");
+
+                ShowCallProgressStatus("spanCallTextHeader");
+
+                setTimeout(function ()
+                {
+                    //=============Show Callback=================
+                    $("#divCallBackTop").removeClass("hidden");
+                    $("#btnCloseCallBack").click();
+                    $("#btnCloseHeaderProgress").addClass("hidden");
+                    $("#divCallBackProgressBarHeader").addClass("hidden");
+                    document.getElementById("formCallOus").reset();
+                }, parseInt(TimeOut))
+
+            }
+
+            //===================Deal Time Out=======================
+            else if ($("#hdnConfirmationSource").val() == "TimeOut")
+            {
+                PostCallBackRequest("formCallOusTimeOut");
+
+                $('#timeout').dialog('open');
+                $("#divCallBackProgressBarTimeOut").removeClass("hidden");
+                $("#divCBTimeout").addClass("hidden");
+                $("#btnCloseTimeOutCallBack").show();
+                $(".ui-dialog-titlebar-close").hide();
+
+                ShowCallProgressStatus("spanCallTextTimeOut");
+
+                setTimeout(function ()
+                {
+                    $('#timeoutBox').dialog('close')
+                    $(".ui-dialog-titlebar-close").show();
+                    $("#btnCloseTimeOutCallBack").hide();
+                    $("#divCallBackProgressBarTimeOut").addClass("hidden");
+                    $("#divCBTimeout").removeClass("hidden");
+                    $(".ui-dialog-titlebar-close").removeClass("hidden");
+                    document.getElementById("formCallOusTimeOut").reset();
+                }, parseInt(TimeOut))
+
+            }
+
+            //================Call Back For Error Page Done=================
+            else if ($("#hdnConfirmationSource").val() == "CallBackError")
+            {
+                //Show Call Progrss
+                PostCallBackRequest("formCallOusCallBackError");
+
+                $("#divCallBackBoxError").addClass("hidden");
+
+                $("#divCallBackProgressBarError").removeClass("hidden");
+
+           
+                //Call Progress Text
+                ShowCallProgressStatus("spanCallTextError");  
+
+                //Reset
+                setTimeout(function ()
+                {
+                    //=============Show Callback=================
+                    $("#divCallBackBoxError").removeClass("hidden");
+                    $("#divCallBackProgressBarError").addClass("hidden");
+                    document.getElementById("formCallOusCallBackError").reset();
+
+                }, parseInt(TimeOut))
+
+            }
+
+            //=====================Schedule Callback ====================
+            else if ($("#hdnConfirmationSource").val() == "HomeCallLater")
+            {
+                $("#hdnCallMeB").val("CallBackLaterUpdate")
+
+                $('#blkoverlay1').hide();
+
+                $('#divScheduleCallPopup').hide();
+
+                $("#form1").submit();
+
+                $('input[name="callusphone"]').val('')
+
+                $("#hdnCallMeB").val("CallBackLater")
+            }
+
+        }
+        function CloseFooterProgress()
+        {
+            $("#btnCloseFooterProgress").hide();
+            $(".crs").show();
+            $("#blkoverlay1").hide();
+            $("#divCallBackTextInfo").show();
+            $("#divCallBackBoxHome").show();
+            $(".crs").click();
+            $("#divCallBackProgressBarHome").addClass("hidden");
+        }  
+        function ProcessTopCallRequest()
+        {
+            var phoneNumber = $("#callusphone").val().trim();
+            var isPhoneNoExist = false;
+            if (phoneNumber == "") {
+                $("#contactuserror").html("Please enter phone number.");
+                return false;
+            }
+            else if (validateMobileZeroStart('callusphone', 'contactuserror', 'Phone number cannot be start with zero') == false) {
+                return false;
+            }
+            if (!validatePhone(phoneNumber)) {
+                $("#contactuserror").html("Please provide valid phone number.");
+                return false;
+            }
+            $.ajax({
+                url: "/FooterLinks/CheckPhoneExist?callType=CMB&phoneNo=" + phoneNumber,
+                type: "GET",
+                cache: false,
+                dataType: "json",
+                contentType: 'application/json; charset=utf-8',
+                beforeSend: function () {
+                    $("#Button2new").html('Please wait...');
+                    $("#Button2new").attr('disabled', true).css("cursor", "no-drop");
+                },
+                success: function (data)
+                {
+                  
+                    $('#hdnConfirmationSource').val("HomeCallBackTop");
+
+                    if (data.IsNumberExist == "Yes")
+                    {
+                        document.getElementById("cbNumber").innerText = phoneNumber;
+                        document.getElementById("dtCbtime").innerText = data.RecentDate;
+                        $('#blkoverlay1').show();
+                        $('#confirmationPopup').show();
+                    }
+                    else if (data.IsNumberExist == "No")
+                    {
+                        AcceptCallUsOption();
+                        
+                    }
+                    else if (data.IsNumberExist == "Blocked")
+                    {
+                        document.getElementById("cbNumber").innerText = phoneNumber;
+                        document.getElementById("dtCbtime").innerText = data.RecentDate;
+                        $('#hdnConfirmationSource').val("HomeCallBackTop");
+                        $('#blkoverlay1').show();
+                        $('#ipblockpopup').show();
+                    }
+                    $("#Button2new").html('Call Us Now !');
+                    $("#Button2new").removeAttr('disabled').removeAttr("style");
+                },
+                error: function (err) {
+                    console.log(err);
+                    $("#Button2new").html('Call Us Now !');
+                    $("#Button2new").removeAttr('disabled').removeAttr("style");
+                }
+            });
+
+
+
+
+
+        }
+ 
+        function ClearCallBackError(TargetID)
+        {
+            $("#"+TargetID).html("");
+        }
+                                   
+        function CancelCallUsOption()
+        {
+          $('#blkoverlay1').hide();
+          $('#confirmationPopup').hide();                        
+          $('input[name="callusphone"]').val('')
+          window.location.reload();
+        }
+
+        function ProcessCallRequestTimeOut() {
+            var phoneNumber = $("#callusphoneTimeOut").val().trim();
+            var isPhoneNoExist = false;
+            if (phoneNumber == "") {
+                $("#contactuserrorTimeOut").html("Please enter phone number.");
+                return false;
+            }
+            else if (validateMobileZeroStart('callusphoneTimeOut', 'contactuserrorTimeOut', 'Phone number cannot be start with zero') == false) {
+                return false;
+            }
+            if (!validatePhone(phoneNumber)) {
+                $("#contactuserrorTimeOut").html("Please provide valid phone number.");
+                return false;
+            }
+            $.ajax({
+                url: "/FooterLinks/CheckPhoneExist?callType=CMB&phoneNo=" + phoneNumber,
+                type: "GET",
+                cache: false,
+                dataType: "json",
+                contentType: 'application/json; charset=utf-8',
+                beforeSend: function () {
+                   $("#Button2newTimeOut").html('Please wait...');
+                    $("#Button2newTimeOut").attr('disabled', true).css("cursor", "no-drop");;
+                },
+                success: function (data)
+                {
+                    $('#hdnConfirmationSource').val("TimeOut");
+              
+
+                    if (data.IsNumberExist == "Yes") 
+                    {
+                        document.getElementById("cbNumber").innerText = phoneNumber;
+                        document.getElementById("dtCbtime").innerText = data.RecentDate;
+                        $('#blkoverlay1').show();
+                        $('#confirmationPopup').show();
+                    }
+                    else if (data.IsNumberExist == "No")
+                    {
+                        AcceptCallUsOption();
+                    }
+                    else if (data.IsNumberExist == "Blocked")
+                    {
+                        document.getElementById("cbNumber").innerText = phoneNumber;
+                        document.getElementById("dtCbtime").innerText = data.RecentDate;
+                        $('#blkoverlay1').show();
+                        $('#ipblockpopup').show();
+                    }
+                    $("#Button2newTimeOut").html('Call Us Now !');
+                    $("#Button2newTimeOut").removeAttr('disabled').removeAttr("style");;
+                },
+                error: function (err) {
+                    console.log(err);
+                    $("#Button2newTimeOut").html('Call Us Now !');
+                    $("#Button2newTimeOut").removeAttr('disabled').removeAttr("style");;
+                }
+            });
+
+
+
+
+
+        }
+
+        function ProcessErrorCallRequest()
+        {
+            var phoneNumber;
+
+            if ($("#txtCallmeBack").val().length == 0)
+            {
+                $("#txtCallmeBack").after("<span class='InlineError CallmeBack'>Please enter phone number!</span>");
+                $("#txtCallmeBack").focus()
+                return false
+            }
+            else if (ValidatePhone())
+            {
+                phoneNumber = $("#txtCallmeBack").val().trim();
+                $.ajax(
+                {
+                    url: "/FooterLinks/CheckPhoneExist?callType=CMB&phoneNo=" + phoneNumber,
+                    type: "GET",
+                    cache: false,
+                    async: false,
+                    dataType: "json",
+                    contentType: 'application/json; charset=utf-8',
+                    beforeSend: function ()
+                    {
+                        $("#btnCallBack").html('Please wait...');
+                        $("#btnCallBack").attr('disabled', true).css("cursor", "no-drop");
+
+                    },
+                    success: function (data)
+                    {
+                        $('#hdnConfirmationSource').val("CallBackError");
+
+                        if (data.IsNumberExist == "Yes")
+                        {
+                            document.getElementById("cbNumber").innerText = phoneNumber;
+                            document.getElementById("dtCbtime").innerText = data.RecentDate;
+                          
+                            $('#blkoverlay1').show();
+                            $('#confirmationPopup').show();
+
+                        }
+                        else if (data.IsNumberExist == "No")
+                        {
+                            AcceptCallUsOption();
+                        }
+
+                        $("#btnCallBack").html('Call Us Now !');
+                        $("#btnCallBack").removeAttr('disabled').removeAttr("style");
+
+                    },
+                    error: function (err)
+                    {
+                        console.log(err);
+                        $("#btnCallBack").html('Call Us Now !');
+                        $("#btnCallBack").removeAttr('disabled').removeAttr("style");;
+                    }
+                });
+
+            }
+
+
+        }
+       
+        //================Call Back Related Functions End================
+
+        function PostCallBackRequest(formName)
+        {
+            var data = $('form#' + formName).serialize();
+          
+            $.post('/FooterLinks/ContactUs', data,
+            function (result)
+            {
+               
+            });
+        }
+
+        function ShowCallProgressStatus(ControlID)
+        {
+            setTimeout(function () {
+                $("#" + ControlID).html("Call in Progress");
+            }, 7000);
+        }
+
+        function ShowCallBlockPopup() {
+
+            $(".ibblockbg").removeAttr("style");
+            $("#btnCloseCallBlockPopup").removeAttr("style")
+            $('#ipblockpopup').removeAttr("style")
+            $('#blkoverlay1').show();
+            if (!is_mobile()) {
+                $('#ipblockpopup').show();
+            }
+            else {
+                $(".ibblockbg").attr("style", "width: 100px;");
+                $("#btnCloseCallBlockPopup").attr("style", "margin-left: 19px;  margin-right: 10px; margin-top: 4px;}");
+                $('#ipblockpopup').attr("style", "display: block; z-index: 999999;  margin-top: 21%;");
+            }
+
+        }
+        //For block popup close
+        function CloseBlockedPopup() {
+            $('#blkoverlay1').hide();
+            $('#ipblockpopup').hide();
+            $('input[name="callusphone"]').val('')
+        }
+        //Keep this code for Reloading on Back Button Click//
+        //**** For Chrome/Mozilla***
+        if (!!window.performance && window.performance.navigation.type === 2) {
+            window.location.reload();
+        }
+        //**** For Mac - Safari***
+        window.onpageshow = function (event) {
+            if (event.persisted) {
+                window.location.reload();
+            }
+        };
+        //Keep this code for Reloading on Back Button Click//
+
+      
+
+        jQuery.validator.addMethod("validate_email", function (value, element) {
+            if (/^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/.test(value)) {
+                return true;
+            } else {
+                return false;
+            }
+        }, "Please enter a valid Email.");
+
+
+        $(".search-index-page .cff-list-tab").click(function (e) {
+            $("body").removeClass('searchbuttontop');
+        });
+
+        $(".search-index-page .cff-list-tab + .cff-list-tab").click(function (e) {
+            $("body").addClass('searchbuttontop');
+        });
+
+        function GetDestination(URL, From) {
+            $.ajax(
+            {
+                url: URL,
+                type: 'POST',
+                data: { "URL": URL, "From": From },
+                success: function (result) {
+
+                }
+            });
+
+        }
+
+
+    </script>
+                                      
+    <!-- Call back Popup Messages----->
+
+    <span class="call-back-loader hidden" id="callBackProgreessMobile">
+        <div class="mob-connecting" style="border:none; width:92%; box-shadow: none;">
+            <div class="mob-connecting-right" style="width:98%">
+                <h2><span id="spanCallText">Connecting</span><span><img src="/Content/images/dot-animation.gif" alt="dot-animation" /></span></h2>
+                <p>If you don't receive any call. Please make sure </p>
+                <ul>
+                    <li>Phone is Not on Voicemail</li>
+                    <li>A Good Network Zone</li>
+                </ul>
+            </div>
+        </div>
+    </span>
+
+    <!-- Call back Popup Messages----->
+
+    <script type="text/javascript">
+
+        $(document).ready(function ()
+        {
+            if (isProcessing == null || isProcessing == undefined || isProcessing == false)
+            {
+                setTimeout("TimeoutDeals()", timoutWarning);
+            }
+        });
+        function TimeoutDeals()
+        {
+            var pageName = window.location.pathname;
+            if(pageName==undefined || pageName=="/" || pageName.toUpperCase()=="/FLIGHT/INDEX")
+            {
+                pageName='Home';
+            }
+            if(sessionStorage.getItem('DisplayTimeOutPopup_'+ pageName) == null || sessionStorage.getItem('DisplayTimeOutPopup_'+ pageName).toString() == "No") {
+                IdleWarning();
+                sessionStorage.setItem('DisplayTimeOutPopup_'+ pageName, 'Yes');
+            }
+        }
+
+    </script>
+</body>
+</html>

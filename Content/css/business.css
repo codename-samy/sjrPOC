@@ -1,0 +1,124 @@
+﻿body {
+    overflow-x: hidden;
+}
+.search-box.search-index-page .advanceSearch{display:none;}
+.tab-content{padding-bottom:15px;}
+.searchHolder .search-col-padding, .searchHolder .search-col-padding.noleftwidget{width:100%;padding:2px;}
+.searchHolder .input-group .form-control{height:34px;}
+.ausu-suggest .input-group-addon i, .noleftwidget .input-group-addon i{color:#fff;}
+.product-search-title{font-size:20px;color:#fff;padding-left:0px;}
+.checkout select, .country_to_state, input[type=text], select, textarea{line-height:40px;height:40px;}
+.searchHolder .tab-content{width:100%;}
+.searchHolder .tab-content>.active{padding:0px;}
+.searchHolder label{width:100%}
+.search-box.search-index-page .search-visit{background:rgba(0,0,0,.8)}
+.callicon{z-index:999;}
+header{height:80px!important;z-index:999;}
+.closeSearchpanel {display: none !important;}
+.search-box.search-index-page{background-size:auto!important;height:500px;position:inherit;width:100%;margin:0px;top:0px;}
+.airline-deals-logo{margin:0px;top:90px;left:6%;}
+.businessClassHolder{width:100%;float:left;margin-top:0px;}
+.search-index-page .search-visit{margin-top:200px;}
+
+.businessClassHolder h3{font-size:28px;float:left;width:100%;margin:0px;padding:0px;color:#222;position:relative; margin-bottom:10px;font-weight:normal;}
+.businessClassHolder h3:after{position:absolute;content:"";height:1px;background:#008b25;width:100px;bottom:0px;left:0px;display:none;}
+.businessClassHolder p{font-size:16px;color:#222;padding-bottom:0px;line-height:28px;}
+.businessClassHolder p b{font-size:18px;}
+.businessClassHolder .mainDescHolder{width:100%;float:left;padding:1.5% 3%;background:#f1f1f1;margin-bottom:10px;padding-top:20px;}
+.businessClassHolder .mainDescHolderLeft{width:60%;float:left;padding-right:2%;}
+.businessClassHolder .mainDescHolderLeft h1{font-size:30px;font-weight:normal;margin:0px;padding:0px;padding-bottom:15px;}
+.businessClassHolder .mainDescHolderRight{width:40%;float:left;}
+.businessClassHolder .mainDescHolderRight img{width:100%;float:left;border:1px solid #000;}
+.wrapHeader.expand-popup{height:80px;}
+.businessClassHolder .farePricetableHolder{width:100%;float:left;padding:1% 3%;padding-bottom:7px;}
+.businessClassHolder .farePricetable{width:50%;float:left;background:#fff;padding:0px 4%;}
+.businessClassHolder .farePricetable h2{display:block;font-size:26px;padding-bottom:15px;color:#333;margin:0px;font-weight:normal;text-align:center;}
+.businessClassHolder .farePricetable h2 span{color:#fc26ae;}
+.businessClassHolder .farePricetable ul{width:100%;float:left;margin:0px;padding:4%;border:1px solid #000;padding-top:2%;background: #fbfbfb;padding-bottom:2%;}
+.businessClassHolder .farePricetable ul li{float:left;padding:1% 1% 1% 2%;margin: 0px;width:100%;background: #fff;margin-bottom:10px;box-shadow: 1px 1px 4px #000;}
+
+.businessClassHolder .farePricetable ul li:last-child{border:none;}
+.businessClassHolder .farePricetable ul li{width:100%;float:left;display:block; color:#333;text-transform:uppercase;}
+
+.businessClassHolder .farePricetable ul li:hover{background:#f3f0f0;}
+.businessClassHolder .farePricetable ul li span{width:65%;float:left;display:block;text-align:left;padding-top:3px;}
+.businessClassHolder .farePricetable ul li span i{display:block;font-style:normal;font-size:14px;text-transform:capitalize;}
+.businessClassHolder .farePricetable ul li span i span{display:inline-block;padding-top:0px;}
+
+.businessClassHolder .farePricetable ul li b{width:35%;float:right;display:block;text-align:right;color:#008b25;font-size:20px;font-weight:normal;line-height:34px;}
+.businessClassHolder .farePricetable ul li b span{font-size:14px;color:#fff;background:#fc26ae;padding:0px;display:block;margin-top:0px;width:50%;text-align:center;line-height:34px;float:right;text-transform:none;cursor:pointer;margin-left:12px;}
+
+.businessClassHolder .busContentSec{float:left;width:100%;padding:2% 4% 0px;border:1px solid #f1f1f1;margin-bottom:7px;background:#f1f1f1;}
+.businessClassHolder .busContentSecLeft{width:50%;float:left;padding:2% 2% 0px;padding-top:0px;padding-left:0px;}
+.businessClassHolder .busContentSecRight{width:50%;float:right;}
+
+.businessClassHolder .busContentSec a{text-decoration:underline;color:#333;}
+.businessClassHolder .busContentSec a:hover{text-decoration:none;}
+.businessClassHolder .busContentSec img{width:100%;border:1px solid #000;padding:1px;margin-right:20px;margin-bottom:20px;float:left;}
+.businessClassHolder .busContentSec.pullRight img{float:right;margin-left:20px;margin-right:0px;}
+
+
+.businessClassHolder .busContentSec.pullRight .busContentSecLeft{float:right;}
+.businessClassHolder .busContentSec.pullRight .busContentSecRight{float:left;padding-right:2%;}
+
+.businessClassHolder .busContentSec.pullRight .busContentSecRight h3,.businessClassHolder .busContentSec.pullRight .busContentSecRight .classContentHolder{text-align:left;}
+
+.businessClassHolder .busContentSec h3{font-size:22px;font-weight:bold;}
+.bannerContent{position:absolute;left:0px;right:0px;margin:auto;width:400px;font-size:30px;text-align:center;color:#000;top:100px;text-shadow:1px 2px 9px #000;}
+.classContentHolder{float:left;width:100%;color:#333;font-size:16px;line-height:28px;}
+.classContentHolder li{color:#333;font-size:14px;line-height:24px;margin:0px;padding:0px;padding-bottom:5px;}
+.businessSearchWidget{width: 100%;position:relative;}
+.search-index-page .input-group-circle{top:35px;}
+.showHideContentHolder{display:none;}
+.subscribeHolder{width:100%;float:left;}
+
+.businessClassHolder .farePricetable ul li span.originame{text-overflow:ellipsis;white-space:nowrap;overflow:hidden;width:45%;float:left;}
+.businessClassHolder .farePricetable ul li span{display:inline-block;}
+.businessClassHolder .farePricetable ul li span.originame1{text-overflow:ellipsis;white-space:nowrap;overflow:hidden;width:40%;float:right;}
+.readMore{display:none}
+.footer_call{z-index:9999;}
+.search-box.search-index-page h2{text-align:left;/*display:block;*/padding-top:20px;}
+.businessTxtHolder{float:left;color:#c53e16;font-size:30px;}
+.product-search-title{font-size:18px;}
+@media (max-width:768px) {
+.calIcon{top:35px;}
+.airline-deals-logo + .container{background:#000;margin-top:130px;}
+.search-index-page h2.book-cheap{font-size:15px;}
+.businessClassHolder .mainDescHolderLeft h1{font-size:26px;}
+.hideformobile{display:none;}
+.readMore{display:block}
+.businessClassHolder p{font-size:14px;line-height:20px;}
+.businessClassHolder p{overflow:hidden;text-overflow:ellipsis;height:140px;line-height:24px;margin-bottom:40px}
+.classContentHolder{height:140px;overflow:hidden;margin-bottom:40px;font-size:14px;line-height:20px;}
+.readMore{position:absolute;bottom:10px;left:0px;color:#00537e;text-decoration:underline;}
+.readMore:focus{color:#00537e;}
+.mainDescHolderLeft,.busContentSecRight{position:relative;}
+.classContentHolder.expandTxt{height:auto;}
+.searchHolder .tab-content{padding:4%;}
+.searchHolder.business{left:8px!important;}
+.search-box.search-index-page .search-visit{margin-top:0px;background:none!important;}
+.timeout-popup.callinpopup {display:block;}
+.businessClassHolder .busContentSecLeft,.businessClassHolder .busContentSecRight,.businessClassHolder .farePricetable ul li a b span,.businessClassHolder .farePricetable ul li span,.businessClassHolder .farePricetable ul li b{width:100%}
+.businessClassHolder .farePricetable ul li{padding:10px;}
+.businessClassHolder .farePricetable ul li:nth-of-type(1n+6){display:none;}
+.businessClassHolder .mainDescHolderLeft,.businessClassHolder .mainDescHolderRight,.businessClassHolder .farePricetable,.businessClassHolder .busContentSec img{width:100%}
+.businessClassHolder .busContentSec h3{font-size:16px;line-height:24px;}
+.businessClassHolder{padding:0px 2%;}
+.businessClassHolder .farePricetable{border:0px;padding:0px;}
+.farePricetableHolder{margin-bottom:20px;}
+.businessClassHolder .busContentSec,.businessClassHolder .mainDescHolder{padding:4%;}
+.businessClassHolder .mainDescHolder h3,.businessClassHolder .farePricetable h2{font-size:20px;}
+.search-box.search-index-page{height:auto;z-index:99;}
+.innerSearchWidget .passangerCatogaryHolder .src-input{width: 17.8%;}
+#formAirSearch label, .formMidBox label{font-size:12px;}
+.businessClassHolder .farePricetable:last-child{padding-top:20px;}
+.airline-deals-logo{top:20px!important;left:0px;right:0px;margin:auto;text-align:center;padding:3px;width:150px;}
+.airline-deals-logo img{padding-right:0px;width:100%;}
+.bannerContent{width:auto;font-size:24px;}
+.searchHolder:before {border-bottom: 10px solid #fc26ae!important;}
+.businessClassHolder .farePricetable ul li b span{width:auto;padding:0px 15px;}
+.businessClassHolder .farePricetable ul li b{text-align:left;}
+.businessClassHolder .farePricetable ul li span.originame1{width:34%;}
+.businessClassHolder .farePricetable ul li span.originame{width:52%;}
+.bannerContent{top:80px;}
+}

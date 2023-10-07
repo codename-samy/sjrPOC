@@ -1,0 +1,2223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <title>sjrtravels.com | Save Big on Flight Tickets | Enjoy Discounts</title>
+    
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    
+    
+
+    <link rel="shortcut icon" href="/Content/images/fav.png" type="image/x-icon" />
+    <link href="/Content/css/bootstrap.css" rel="stylesheet" type="text/css" />
+    
+    <link href="/Content/css/main.css" rel="stylesheet"/>
+<link href="/Content/css/custom.css" rel="stylesheet"/>
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+    
+<meta name="description" content="Book Cheap Flights & Discounted Airfares. Budgeted Airlines - First Class & Business Class Tickets" />
+    <style>
+    .about-intro ul li {
+        line-height: 2;
+    }
+
+    /*.about-intro h3 {
+        color: #f9676b;
+    }
+
+    h4 {
+        margin: 20px 0 10px 0 !important;
+    }*/
+
+    .list-bullet li {
+        list-style: disc;
+        color: #07253F;
+        font-family: 'Open Sans',sans-serif;
+        line-height: 1.4 !important;
+        margin-left: 19px;
+        margin-bottom: 9px;
+        padding-left: 7px;
+    }
+    .static-content p b{
+        font-size:15px;
+        color:#000;
+    }
+</style>    
+
+    <script src="/Content/js/jquery.js"></script>
+<script src="/Content/js/jquery-ui.min.js"></script>
+<script src="/Scripts/jquery.validate.js"></script>
+<script src="/Content/js/bootstrap.js"></script>
+
+    
+    <style>
+      
+        .blkoverlay1{background:rgba(0,0,0,.7);position:fixed;width:100%;height:100%;z-index:1000;display:none;cursor:url(/content/images/close-icon.png), auto;}
+        .confirmationPopup{width:470px;height:210px;border:4px solid #000;position:fixed;left:0px;top:0px;right:0px;bottom:0px;background:#fff;padding:2% 1%;z-index:100000;margin:auto;display:none;border-radius:10px;}
+        .confirmationPopup p{font-size:15px;color:#333;text-align:center;}
+        .confirmationPopup p span{color:#fb8c07;font-weight:bold;}
+        .confirmationPopup p b{text-align:center;font-size:16px;padding-top:10px;display:block;}
+        .btnHolder{position:absolute;bottom:20px;width:100%;left:0px;padding:0px 5%;text-align:center;}
+        .btnHolder button{padding:5px 40px;color:#fff;font-size:13px;border:none;}
+        .btnHolder button:hover {background:#fb8c07;}
+        .yesBtn{background:rgba(68, 128, 183, 1);margin-right:50px;}
+        .noBtn{background:#6ba2d4;}
+        .showtab{display:block !important;}
+        .hidetab{display:none !important;}
+
+        @media (max-width: 480px) {
+  .callicon.call-mobile {
+    display:none!important;
+  }
+}
+
+        @media (max-width:768px) {
+            .confirmationPopup {
+                width: auto;
+                padding: 2% 0.5%;
+            }
+
+                .confirmationPopup p b {
+                    text-align: center;
+                    font-size: 14px;
+                }
+        }
+    </style>
+
+    <script>
+        var isProcessing = false;
+    </script>
+
+</head>
+
+
+<body onload="CheckCookiesStatus(); StartTimers();" onunload="" onmousemove="" class="   expand-popup" >
+    <div class="blackoverlay">
+        <div class="bar"></div>
+        Processing Request...
+    </div>
+    <div class="blkoverlay1" id="blkoverlay1"></div>
+
+    <div id="dvCheckCookies" style="display: none;">
+        <div class="bg-overlay" style="">
+            <div class="popup-window">
+                <div class="mbox">
+                    <p>
+                        To continue using this site, please enable cookies in your web browser.
+                    </p>
+
+                    <div class="buttoncall">
+                        <input id="Button6" type="button" value="Close" onclick="return IsCookiesEnabled();" />
+                        <input id="Button4" type="button" value="Refresh" onclick="return IsCookiesEnabled();" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="orientation-box">
+        <div class="imagebox"></div>
+        <h5>Please rotate your device</h5>
+        <h6>We don't support landscape mode yet. Please go back to portrait mode for the best experience</h6>
+    </div>
+    <div id="dvAcceptCookies" class="gdpr-wraper" style="display: none;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 cookie-content">
+                    <div class="divonDekstop">
+                    We use cookies to improve your experience. By using the site you agree to the use of cookies.
+                    For more information and options regarding cookies and personal data, see our <a href="/cookies.html">Cookies Policy</a></div>
+                   <div class="divonmobb">We use <a href="/cookies.html">cookies</a> to improve your experience.Keep Browsing!</div>
+                </div>
+                <div class="col-md-2">
+                    <input id="Button5" class="cookiebtn" type="button" value="Accept" onclick="return AllowCookies();" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- header page-->
+    <header>
+        <div class="container pr">
+            <div class="callbgimage">
+                <div class="col-md-9 col-sm-9 callbutton">
+                    <div class="call-icon-wrap"><i class="fa fa-phone" aria-hidden="true"></i><i class="fa fa-times" aria-hidden="true" style="display: none;"></i></div>
+                    <!-- lang select wrapper-->
+                    <div class="top-left-wrap font-3">
+                        <div class="btnHolder">
+                        </div>
+                        <div class="tel-top">
+                            <a href="tel:+91-971-700-7657"> <span class="callnonmob"><i class="fa fa-phone"></i>+91-971-700-7657</span></a>
+                            
+                        </div>
+
+                    </div>
+                    <!-- ! lang select wrapper-->
+                </div>
+                <img src="/Content/images/avalablenow.png" />
+            </div>
+            <!-- site top panel-->
+
+
+            <div class="nav-logo-wrap local-scroll">
+                <a href="/" class="logo">
+                    <img src="/Content/images/logo.gif" style="animation-iteration-count: infinite;"  alt="SJR Travels" />
+                </a>
+            </div>
+            <!-- ! site top panel-->
+        </div>
+        
+    <!-- Navigation panel-->
+<style>
+    .anodisp {
+        display: none;
+    }
+</style>
+
+<nav class="main-nav js-stick">
+    <div class="full-wrapper relative clearfix">
+        <!-- Logo ( * your text or image into link tag *)-->
+        <!-- Main Menu-->
+        <div class="inner-nav desktop-nav">
+
+            <ul class="clearlist">
+                <!-- Item With Sub-->
+                <li>
+                <a href="/" id="home" class="mn-has-sub active flightMenu"
+                  >Flight</a
+                >
+                <a href="./hotels.html" id="home" class="mn-has-sub active flightMenu"
+                  >Hotels</a
+                >
+              </li>
+                <!-- End Item With Sub-->
+                <!-- Item With Sub-->
+                 <li class="megamenu">
+                <a href="#" class="mn-has-sub PopularDestMenu"
+                  >Top Destinations <i class="fa fa-angle-down button_open"></i
+                ></a>
+                <ul class="mn-sub mn-has-multi">
+                  <li class="mn-sub-multi">
+                    <h2>Popular Destinations</h2>
+                    <ul>
+                      <li>
+                        <a
+                          href="/destination/agra.html"
+                          onclick="return GetDestination('/destination/agra', 'Menu')"
+                          >Agra</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="/destination/jaipur.html"
+                          onclick="return GetDestination('/destination/jaipur', 'Menu')"
+                          >Jaipur</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="/destination/kerala.html"
+                          onclick="return GetDestination('/destination/kerela', 'Menu')"
+                          >Kerela</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="/destination/Varanasi.html"
+                          onclick="return GetDestination('/destination/Varanasi', 'Menu')"
+                          >Varanasi</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="/destination/goa.html"
+                          onclick="return GetDestination('/destination/goa', 'Menu')"
+                          >Goa</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="/destination/ladakh.html"
+                          onclick="return GetDestination('/destination/ladakh', 'Menu')"
+                          >Ladakh</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="/destination/darjeeling.html"
+                          onclick="return GetDestination('/destination/darjeeling', 'Menu')"
+                          >Darjeeling</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="/destination/rishikesh.html"
+                          onclick="return GetDestination('/destination/rishikesh', 'Menu')"
+                          >Rishikesh</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="/destination/mumbai.html"
+                          onclick="return GetDestination('/destination/mumbai', 'MM')"
+                          >Mumbai</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="/destination/udaipur.html"
+                          onclick="return GetDestination('/destination/udaipur', 'Menu')"
+                          >Udaipur</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="megamenu">
+                <a href="#" class="mn-has-sub PopularAirMenu">Our Services <i class="fa fa-angle-down button_open"></i></a>
+                <ul class="mn-sub mn-has-multi ligridview">
+                    <li><a href="/services/flights.html">Flight Bookings</a></li>
+                    <li><a href="/services/trains.html">Train Reservations</a></li>
+                    <li><a href="/services/buses.html">Bus Ticketing</a></li>
+                    <li><a href="/services/hotels.html">Hotel Bookings</a></li>
+                    <li><a href="/services/cabs.html">Cab Rentals</a></li>
+                    <li><a href="/services/adventure-packages.html">Adventure Packages</a></li>
+                    <li><a href="/services/cruise-bookings.html">Cruise Bookings</a></li>
+                    <li><a href="/services/honeymoon-packages.html">Honeymoon Packages</a></li>
+                    <li><a href="/services/group-tours.html">Group Tours</a></li>
+                    <li><a href="/services/corporate-packages.html">Corporate Packages</a></li>
+                    <li><a href="/services/family-vacations.html">Family Vacations</a></li>
+                    <li><a href="/services/visa-assistance.html">Visa Assistance</a></li>
+                    <li><a href="/services/travel-insurance.html">Travel Insurance</a></li>
+                    <li><a href="/services/special-deals.html">Special Deals</a></li>
+                </ul>
+            <li class="megamenu">
+    <a href="#" class="mn-has-sub BusinessClassMenu">Top Business Deals <i class="fa fa-angle-down button_open"></i></a>
+    <ul class="mn-sub mn-has-multi ligridview">
+        <li><a href="/services/corporate-packages.html">Corporate Packages</a></li>
+        <li><a href="/services/family-vacations.html">Family Vacations</a></li>
+        <li><a href="/services/adventure-packages.html">Adventure Packages</a></li>
+    </ul>
+</li>
+
+               
+
+                <li class="search1">
+                    <a href="javascript:void(0);" class="freecallbackBtn">
+                        <span class="callusbtn">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Svg1" x="0px" y="0px" width="32.667px" height="32.667px" viewBox="0 0 32.667 32.667" style="enable-background:new 0 0 32.667 32.667;" xml:space="preserve">
+<g>
+                            <path d="M16.333,0C7.327,0,0,7.327,0,16.334c0,9.006,7.326,16.333,16.333,16.333c0.557,0,1.007-0.451,1.007-1.006   c0-0.556-0.45-1.007-1.007-1.007c-7.896,0-14.318-6.424-14.318-14.319c0-7.896,6.422-14.32,14.318-14.32   c7.896,0,14.317,6.424,14.317,14.32c0,3.299-1.756,6.571-4.269,7.955c-0.913,0.502-1.903,0.751-2.959,0.761   c0.634-0.378,1.183-0.887,1.591-1.531c0.08-0.121,0.186-0.226,0.238-0.359c0.328-0.789,0.357-1.684,0.555-2.516   c0.243-1.066-4.658-3.143-5.084-1.815c-0.154,0.493-0.39,2.048-0.699,2.458c-0.275,0.365-0.953,0.193-1.377-0.168   c-1.117-0.952-2.364-2.352-3.458-3.457l0.002-0.001c-0.028-0.029-0.062-0.062-0.092-0.091c-0.031-0.03-0.062-0.062-0.093-0.092l0,0   c-1.106-1.093-2.506-2.338-3.457-3.458c-0.36-0.424-0.534-1.1-0.168-1.376c0.41-0.31,1.966-0.543,2.458-0.698   c1.326-0.425-0.75-5.329-1.816-5.084c-0.832,0.195-1.727,0.225-2.516,0.552c-0.134,0.056-0.238,0.16-0.359,0.24   c-2.799,1.775-3.16,6.083-0.428,9.292c1.041,1.228,2.127,2.416,3.245,3.576l-0.006,0.004c0.031,0.031,0.063,0.06,0.095,0.09   c0.03,0.031,0.059,0.062,0.088,0.095l0.006-0.006c1.16,1.118,2.535,2.764,4.769,4.255c4.703,3.141,8.312,2.264,10.438,1.098   c3.67-2.021,5.312-6.338,5.312-9.719C32.667,7.327,25.339,0,16.333,0z"></path>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+</svg> Get An Instant Call Back<i class="fa fa-angle-down"></i>
+                        </span>
+                    </a>
+
+                </li>
+            </ul>
+        </div>
+        <div class="call-icon-wrap"><i class="fa fa-phone" aria-hidden="true"></i><i class="fa fa-times" aria-hidden="true" style="display: none;"></i></div>
+        <div class="top-left-wrap font-3">
+            <div class="btnHolder">
+            </div>
+            <div class="tel-top" style="display: none;">
+                <a href="tel:+91-971-700-7657">
+                    <span><i class="fa fa-phone" style="display: inline-block;"></i>+91-971-700-7657</span>
+                </a>
+
+                <span class="callnowpop">
+                    <i style="display: inline-block;" class="call-hp">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Svg2" x="0px" y="0px" width="32.667px" height="32.667px" viewBox="0 0 32.667 32.667" style="enable-background:new 0 0 32.667 32.667;" xml:space="preserve">
+<g>
+                        <path d="M16.333,0C7.327,0,0,7.327,0,16.334c0,9.006,7.326,16.333,16.333,16.333c0.557,0,1.007-0.451,1.007-1.006   c0-0.556-0.45-1.007-1.007-1.007c-7.896,0-14.318-6.424-14.318-14.319c0-7.896,6.422-14.32,14.318-14.32   c7.896,0,14.317,6.424,14.317,14.32c0,3.299-1.756,6.571-4.269,7.955c-0.913,0.502-1.903,0.751-2.959,0.761   c0.634-0.378,1.183-0.887,1.591-1.531c0.08-0.121,0.186-0.226,0.238-0.359c0.328-0.789,0.357-1.684,0.555-2.516   c0.243-1.066-4.658-3.143-5.084-1.815c-0.154,0.493-0.39,2.048-0.699,2.458c-0.275,0.365-0.953,0.193-1.377-0.168   c-1.117-0.952-2.364-2.352-3.458-3.457l0.002-0.001c-0.028-0.029-0.062-0.062-0.092-0.091c-0.031-0.03-0.062-0.062-0.093-0.092l0,0   c-1.106-1.093-2.506-2.338-3.457-3.458c-0.36-0.424-0.534-1.1-0.168-1.376c0.41-0.31,1.966-0.543,2.458-0.698   c1.326-0.425-0.75-5.329-1.816-5.084c-0.832,0.195-1.727,0.225-2.516,0.552c-0.134,0.056-0.238,0.16-0.359,0.24   c-2.799,1.775-3.16,6.083-0.428,9.292c1.041,1.228,2.127,2.416,3.245,3.576l-0.006,0.004c0.031,0.031,0.063,0.06,0.095,0.09   c0.03,0.031,0.059,0.062,0.088,0.095l0.006-0.006c1.16,1.118,2.535,2.764,4.769,4.255c4.703,3.141,8.312,2.264,10.438,1.098   c3.67-2.021,5.312-6.338,5.312-9.719C32.667,7.327,25.339,0,16.333,0z"></path>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+</svg>
+                    </i>
+                    <p class="small">
+                        Free Call Back
+                        <b>We'll Call you</b>
+                    </p>
+                </span>
+            </div>
+
+        </div>
+    </div>
+</nav>
+<div class="call-to-phone" id="divTopHeaderCallBack" style="display:none;">
+    <div id="divCallBackTop">
+        <form id="formCallOus" action="/contact" method="post" autocomplete="off">
+            <input type="hidden" id="hdnCallOus" name="FormType" value="CallOus" />
+
+        <span class="font-4">
+            <div class="callbackInpHolder">
+                <img src="/Content/images/ukflag-icon.jpg" class="flagicon" />
+                <b class="call-bycountry">+91</b>
+                <input class="anodisp" name="countrycode" type="text">
+                <input type="tel" title="Enter 10-15 digits phone number" pattern="\d*" required placeholder="Enter 10-15 digits number"
+                       value="" maxlength="15" onkeyup="return ClearCallBackError('contactuserror')" onkeypress="return isNumberKey(event);"
+                       autocomplete="off"
+                       minlength="10" name="callusphone" id="callusphone" />
+            </div>
+
+                <span id="contactuserror"></span><button id="Button1" style="display:none;" type="submit" class="fieldButton"></button>
+                <button id="Button2new" type="button" class="fieldButton" onclick="return ProcessTopCallRequest();">Call Us Now !</button>
+
+            <span class="closeinstantcall" style="display: none">X</span>
+        </span>
+
+        </form>
+        <a href="#" id="btnCloseCallBack" onclick="return CloseHeaderCallBack()" class="closeit"><i class="fa fa-times"></i></a>
+    </div>
+    <a href="javascript:void(0)" class="btn btn-danger hidden" id="btnCloseHeaderProgress" onclick="return CloseHeaderProgress()" style="float:right">X</a>
+<style>
+
+    ul li {
+
+        margin-left: 0;
+    }
+</style>
+
+
+
+<div class="mob-connecting hidden" id="divCallBackProgressBarHeader" style="border: 0px solid #307fca; box-shadow: 0px 0px 0px 0px;">
+    
+    <div class="mob-connecting-left"><img src="/Content/images/call-connecting.jpg"></div>
+    <div class="mob-connecting-right">
+        <h2><span id="spanCallTextHeader">Call in Progress</span><span><img src="/Content/images/dot-animation.gif" alt="dot-animation"></span></h2>
+        <h3>Please answer when your phone rings. </h3>
+
+        <p>If you don't receive any call. Please make sure </p>
+        <ul>
+     
+            <li> Phone is Not on Voicemail</li>
+            <li> A Good Network Zone</li>
+        </ul>
+
+    </div>
+
+</div>
+
+  
+</div>
+<script>
+    $(document).ready(function () {
+        $('li a').removeClass("active");
+        var Menu = document.getElementById("hdnActiveMenu")
+        if (Menu != 'undefind' && Menu != null) {
+            switch (Menu.value) {
+                case "Home":
+                    {
+                        $(".flightMenu").addClass("active");
+                        break;
+                    }
+                case "AboutUs":
+                    {
+                        $(".AboutUsMenu").addClass("active")
+                        break;
+                    }
+
+                case "ContactUs":
+                    {
+                        $(".ContactUsMenu").addClass("active")
+                        break;
+                    }
+
+                case "Airlines":
+                    {
+                        $(".PopularAirMenu").addClass("active")
+                        break;
+                    }
+
+                case "Destinations":
+                    {
+                        $(".PopularDestMenu").addClass("active")
+                        break;
+                    }
+
+ case "BusinessClassDeals":
+                    {
+                        $(".BusinessClassMenu").addClass("active")
+                        break;
+                    }
+
+
+            }
+
+        }
+
+
+
+    });
+
+    function CloseHeaderCallBack()
+    {
+       
+        $("#divTopHeaderCallBack").removeClass("call-to-phone buttonondiv")
+        $("#divTopHeaderCallBack").addClass("call-to-phone")
+        $("#divCallBackTop").show();
+        
+    }
+
+    function CloseHeaderProgress() {
+        $(".callusbtn").click()
+        $("#divTopHeaderCallBack").removeClass("call-to-phone buttonondiv")
+        $("#divTopHeaderCallBack").addClass("call-to-phone")
+        $("#divCallBackTop").removeClass("hidden")
+        $("#divCallBackProgressBarHeader").addClass("hidden")
+        $("#btnCloseHeaderProgress").addClass("hidden")
+    }
+</script>
+
+        <!-- ! Auto Popup for all pages-->
+        
+
+    </header>
+
+    <div class="content-body">
+        
+
+
+
+<!-- BEGIN: PAGE TITLE SECTION -->
+<section style="background-image: url('/Content/pic/breadcrumbs/bg-1.jpg');" class="breadcrumbs">
+    <div class="container">
+        <div class="text-left breadcrumbs-item">
+            <h2><span>Terms and </span>Conditions</h2>
+        </div>
+    </div>
+</section>
+
+<!-- END: PAGE TITLE SECTION -->
+
+<section>
+    <!-- START: ABOUT-US -->
+   
+        <div class="container clear-padding">
+            <div class="col-md-12 static-content">
+
+                                            
+
+                <p>Please read the terms and conditions thoroughly carefully as they clarify our commitments and particular rights. In each terms of use, references to "your" and "you" are assigned to the principal named the individual in whose name the reservation is made and references to "us" and "we" are assigned to www.sjrtravels.com (the airline company). The usage of our website by you is administered by a different set of terms and conditions. In the event of any contradicting any this document or any specific term, it is advised to not to use this site further. All policies and terms of use mentioned in this document are in agreement with every booking made with <a href="https://www.sjrtravels.com">www.sjrtravels.com.</a> Their registered office address is <b>Tower C -1011, Noida One Business Park, Plot B8, Sec 62 Noida (U.P) - 201301</b>.</p>
+
+                <p>We play various roles as follows: a travel operator who guides you to book your flight or other travel-related arrangements (special facilities) and a Package facilitator. Our responsibilities are in accordance with what kind of travel arrangements you have asked us. We have taken measures to simplify our terms of use underneath as obviously as could reasonably be expected.</p>
+
+                <p><b>Reserving Your Travel Arrangements</b></p>
+
+                <p>All services provided by us are liable to their accessibility. Fares uploaded on our website are not guaranteed up until they are ticketed. After booking with us, you should affirm that you approve, acknowledge and understand these terms and conditions on your and other travel allies’ behalf. Furthermore, when booking for more than one individual, you are responsible for the add up payment from every voyager of your gathering for whom you are making the flight reservation. Note that you are in charge of the precision of the details you share with us and for the data that was provided to us by you is duly passed on to every last individual from your travelling journey.</p>
+
+                <p>When booking, you are requested to make the applicable payment as mentioned. Note that until the point that the booking is admitted from our end and partial deposit or full payment is received by us through the certain mode and affirmation receipt, either in the interest of www.sjrtravels.com or the service provider being referred to, no sort of agreement will exist. Make sure the names shared with us are right as in the respective individual’s passport.</p>
+
+                <p><b>Online Booking</b></p>
+
+                <p>It is essential for you to share every important detail when booking online through us. All bookings made online are processed automatically and you are responsible for every one detail that you provide us with, containing however not confined to the bookings, are finished and precisely entered on the web; that you select right flights or hotels, or some other service that you book; that information of the all the travellers are entered as mentioned in the passport. Please note that we hold no responsibility for any dissimilarity of data that you give or the way in which it has been entered on the website. You understand that any inconsistency might lead to extra charges to be borne by you. When utilizing the credit/platinum card to process the payment, please ensure it is in your name or you host the consent of the third party in case it is not yours. The card ought to have an adequate amount to take care of the total expense of the tickets and extra requirements which are reserved by you through us. When we get your booking and acknowledge it, we will start the procedure (depending on accessibility) and the required sum will be charged from your provided details. After this, a confirmation email bearing the receipt will be sent to your email address. No assurance is given from our end for the availability of any flight arrangement, package or any different requirement after your booking has been made. Nor we give any guarantee that our web-based booking administrations are free from malware, infectious viruses or anything that destructively affects your booking.</p>
+
+                <p><b>Telephone Booking</b></p>
+
+                <p>When booking via a telephone with us, you are required to check all the relevant points, depending upon the requirements. Ensure that all the data you have shared with us is right and accurate to the best of your knowledge and is as printed in your passport. Until the point that we get the payment and the same is confirmed from your end, we don't confirm the availability of any package or flight. The phone booking confirmation is considered as confirmed as to when written. After we acknowledge your booking, the procedure will start and the same will be charged on the provided credit/platinum card by you. An e-ticket or the confirmation email with a receipt will be shared with on your email address. The cancellation charges will be applicable starting this time. It is strongly recommended you thoroughly go through all the details and get in touch with us without any delays in case of any discrepancies as it may be difficult to roll out the corrections later. Whatever changes are incorporated in the booking after its completion, you will be required to pay the extra charges, containing administration expenses and travel agency’s charges.</p>
+
+                <p><b>Phone Calls</b></p>
+
+                <p>All arbitrary phone calls made for the booking are recorded for the training and quality purposes. These calls are continually reviewed to offer the most ideal service to our clients.</p>
+
+                <p><b>Payments</b></p>
+
+                <p>The balance of the total fare ought to be paid before the due date said on the confirmation receipt sent from us. Note that for telephonic bookings, you might be required to make the total payment on priority i.e. preceding getting the confirmation receipt. Paying the balance on time is vital as failing to do so may result in the cancellation of your flights, plus bearing the cancellation charges. If by chance an additional "booking charge" is being applied, it would have been advised to you while the booking process. Note that each payment made through cheques take around 7 days for the clearance. Until the point that we get the full payment of your booking, you should understand that your booking's cost may increase (fuel or different additional charges imposed by the service provider). We hold no charge regarding payment (in cash) sent by means of post or courier, regardless of whether sent by any recorded courier organization or delivery post.</p>
+
+                <p><b>Passports, Visa and Health Requirements</b></p>
+
+                <p>You are liable for checking your passport, visa and health-related requirements, ensuring that your travel details are set up in the right place.</p>
+
+                <p>Whatever information you need along with passport and visa, consult the pertinent embassy as the requirements may change with no prior notice and you should stay up to date with regard to the same before your take-off/booking. Take a note that we are not liable for your rejected entry into any nation or onto the flight on account of your negligence to carry the visa, passport or other essential documents required by that nation, flight carrier or authority. You should carry your passport with legitimate validity of fewer than 6 months post your date of return. Make sure that you are carrying a passport, all health-related and visa related documents for each nation including the ones you might travel through. On the off chance, your travel permit is left with its last year, you should check the nation's Embassy you are visiting. For more information, consult with the Passport Office. Every traveller heading out to the United States of America ought to have machine-comprehensible visas and comply with all the special conditions.</p>
+
+                <p>When travelling to South Africa, individuals flying with their children (under 18 years) will be required to bring the birth certificate of their kid/kids. Note that before leaving, you should check with the Foreign and Commonwealth Office for updated passage prerequisites and date guidance for your destination. You can likewise visit www.fco.gov.uk for more information.</p>
+
+                <p><b>Health</b></p>
+
+                <p>Before boarding your flight, make sure you contact your doctor for current proposals as travel-related immunizations may change at any time. As per the recommendations by Foreign and Commonwealth Office (FCO), it is advised you to consult a doctor for a month and a half preceding your travel to check for any vaccinations or other health measures you might require. </p>
+
+                <p>In the event that you can't comply to our fundamental requirement with respect to visa, passport, health customs or immigration needs, we are not responsible for your travel loss or some other misfortune, harm or damage that might happen. Note that you adhere to reimburse us at whatever point we experience any sort of damage, loss or harm because of your inability to take after any of our visa, passport, health or immigration needs.</p>
+
+                <p><b>Special Requests and Medical Problems</b></p>
+
+                <p>Bring to our notice while booking if you have any medical issue or special requests. We try to incorporate such demands to our concerned provider however we can't ensure each such demand from the opposite end will be met. Note that the inability to meet any such necessities won't be considered as a break of our agreement or understanding. </p>
+
+                <p>In the event that you are experiencing any medical issue that may damage your travel, bring it to our notice before sending your complete booking details. It is unfortunate that numerous nations are not capable to satisfy even the fundamental necessities of handicapped travellers. On the off chance, we are not ready to offer the desired medication appropriately, we hold the right to cancel/deny your booking and collect any cancellation charges that are relevant.</p>
+
+                <p><b>Law Compliance</b></p>
+
+                <p>To comply with every one of the customs, laws, drug regulation and foreign exchange of each nation visited is totally on you. We or/and our agents hold the right to revoke your booking in the event of discovering you associated with any illicit activity or getting social intolerant, with no answerability to you for any sort of claim or refund. </p>
+
+                <p><b>Insurance</b></p>
+
+                <p>According to the agreement signed with us or the concerned service supplier, you should have adequate travel insurance. The insurance you choose or buy should cover the unexpected reduction of your vacation, cancellation fees, repatriation and medical costs including individual mishap and air ambulance. In the event that you need to arrange protection from a source other than us, you should give all the details in written and a signed indemnity form on your behalf as well as your travel companion absolving us and our agents/ representatives sitting abroad, of any duty regarding any charges. </p>
+
+                <p><b>Asserts and Complaints</b></p>
+
+                <p>In cases where we are acting as a third party, the contract will be outfitted to you and the concerned service provider and any inquiries/objections will be routed to the same. When facing any issues while being on at any instance, contact the particular provider or specialist or agent promptly. On the off chance, if you neglect to take this method, there will be less possibility to explore your concern or issue. Post your travel, if you wish to report a complaint with respect to any issue, contact our customer service. We will help you and correct it at the earliest.</p>
+
+                <p><b>Jurisdiction</b></p>
+
+                <p>The contract is under the governance of the English Law and if any disputes emerge between the two parties, it will lie under the purview of England's courts. You may even pick the purview of Northern Ireland and Scotland.</p>
+
+                <p><b>Condition of Suppliers</b></p>
+
+                <p>The majority of the services offered by us make your preferred holiday are furnished by third-party suppliers alongside their terms of use that shape a section in your agreement with us or the concerned provider. In the matter of International Conventions, some terms of use may avoid or confine the responsibility of the provider towards you. The copy of the terms and conditions can be received from us or the provider.</p>
+
+                <p><b>Flights and Flight Travel Documents</b></p>
+
+                <p>It is advised that you acknowledge that a flight is depicted as "direct" in your ticket isn't non-stop. The arrival and departure times on the flight ticket are simply estimation and given by the concerned airline. They may vary in light of climate conditions, airport regulation, air traffic control, maintenance or operational needs or the prerequisite of travellers to registration on time.</p>
+
+                <p>On the off chance, you fail to reach on time, we won't have the ability to arrange special request made by you; these sorts of issues are at the sole judgement of the airline carrier. Note that on the off chance you didn't use an area of your flight schedule without consulting the airline carrier, the other outstanding segments would be cancelled with no prior notice. In these circumstances, we won't be responsible for any charges brought about. We have the privilege to switch the airline if the flight is blacklisted under the EU regulations. Changes done to the aircraft after you received the tickets will be provided to you punctually at the check-in counter or the boarding gate.</p>
+
+                <p><b>Travel Documents Checking and Dispatch</b></p>
+
+                <p>The travel records will be sent to you through email imparted to us (else asked for) and you will be liable to check whether you have gotten every all relevant details and whether they are correct or not. Any error ought to be brought to our notice immediately. If not reached instantly, we won't be responsible and the individual changes may involve extra charges as per the applicable fee. Note that the travel documents won't be sent to your email until the point that we get the entire payment mentioned in the dictated terms. We dispatch the documents 7 days preceding your departure date. Dispatching documents by means of post or fax are decided by the company and may include some extra cost. In case the travel documents are lost or got deferred, you will be in charge of paying the extra fares incurred by us to organize and forward a copy of your travel papers. Delays in bookings may likewise require special services to send the papers. For this situation, the conveyance charges will be informed to you while booking.</p>
+
+                <p><b>Reconfirming All Flights</b></p>
+
+                <p>To confirm any changes, you should contact the airline or us in no less than 72 hours preceding your take-off time (as on your ticket). It is applicable to the two returns and also outbound flights. Note that we won't be liable for any extra cost collected by your failure to cross-check flights.</p>
+
+                <p><b>E-Tickets</b></p>
+
+                <p>A couple of airlines give electronic confirmation of your booking or 'e-ticketing', on a few routes. When flying on an e-ticket, you can be provided with a printed copy of your ticket or a paper ticket, if asked for and when authorized. The paper ticket will cost you certain service charges i.e. £10 per ticket, which will be added to your total airline charge.</p>
+
+                <p><b>Airline Ticket Refunds</b></p>
+
+                <p>Every airline ticket is returned for repayment liable to an administration fee of £75 per ticket, and furthermore, you will be charged with cancellation charges per ticket imposed by the airlines or the consolidator as per their terms of use.</p>
+
+                <p>In situations where a recoverable airline ticket's repaid sum is not as much as the previously mentioned charge, the ticket will be deemed and will turn out to be non-refundable. Until we get the refund from the particular consolidator or the airline organization, your amount won't be paid. Usually, the flight ticket refund takes around 4 to 5 weeks from the day when the tickets were given for refund consideration.</p>
+
+                <p><b>Flight Changes</b></p>
+
+                <p>The cancellation of your flight, relevant rights and remedies are dealt with by the terms and conditions of the carrier according to the carriage. In result, you may get qualified for: </p>
+                <ul>
+                    <li>
+                        Carriage on some other flight with the same airline without additional cost.
+                    </li>
+                    <li>
+                        Re-directing to some other area with some other airlines without extra charges where you want to go.
+                    </li>
+                    <li>
+                        Accepting the total refund and, Other cure or right
+                    </li>
+                </ul>                
+
+                <p>On the off chance, there is an itinerary change to be made before the landing of your receipt demonstrating the total fare, or preceding your ticket's issue (with respect to either return or outbound), we will do everything conceivable to expedite it to your notice on behalf of the airline.</p>
+
+                <p><b>Departure Taxes</b></p>
+
+                <p>To include each take-off charge to your flight ticket is by and large outlandish. In a few examples, it ought to be paid by you to your country's Government you are departing from and it won't be refundable by us.</p>
+
+                <table width="50%" cellpadding="0" cellspacing="0" border="0" class="tableSec">
+                    <tbody>
+                        <tr>
+                            <th valign="top">SERVICE</th>
+                            <th valign="top">CHARGE</th>
+                        </tr>
+
+                        <tr>
+                            <td valign="top">Admin Charges</td>
+                            <td valign="top">£50</td>
+                        </tr>
+
+                        <tr>
+                            <td valign="top">Credit Card Surcharge</td>
+                            <td valign="top">0%</td>
+                        </tr>
+
+                        <tr>
+                            <td valign="top">Delivering Tickets by Hand</td>
+                            <td valign="top">Option Not Available</td>
+                        </tr>
+
+                        <tr>
+                            <td valign="top">Tickets Dispatched by First Class Post</td>
+                            <td valign="top">£5</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+
+                <p><b><u>TERMS AND CONDITIONS APPLICABLE FOR AGENCY BOOKING AND FLIGHT PLUS ARRANGEMENTS</u></b></p>
+
+                <p><b>The Contract</b></p>
+
+                <p>We affirm the booking as the agent for the service supplier(s) like the hotel supplier or the airline carrier and help in a contract with the respective supplier when a Flight-Plus or Individual Components booking is done through us. Please note that the contract is subject to all terms and conditions of the supplier. There can be some limitations or exclusions of which the liabilities lie to you, often with International conventions. In case, you require a copy of the service supplier’s terms of use and international conventions, you can request us in a written format. As an agent, we are not responsible for any changes or additions or acts or for any service offered by the supplier.</p>
+
+                <p>Flights, hotels, car rental services and other additional services, all are available to be purchased on our website. We proffer each component with the help of third-party travel service providers. When you book any travel product or avail a service via the supplier, you come into contract/agreement with the supplier directly and not with us. Whereas you can customize your own travel package by listing your preference, the particular booking will not be a holiday package booking and therefore, you will not be secured under the Package Travel Regulations. Once the supplier confirms the chosen requirements, the contract formation process can be started.</p>
+
+                <p><b>Changes You Require</b></p>
+
+                <p>Send us a request in the written format if you require any change or cancellation. It will only be forwarded after we receive it. In case you change or cancel your booking, the concerned service provider may apply alteration or cancellation charges on you, as stated in the document of terms and conditions (which can be 100% of the final fare) along with an additional fee per person which will be confirmed while making changes.</p>
+
+                <p><b>Payment</b></p>
+
+                <p>If you have done the deposit, you are required to make the full payment by the due date of balance mentioned. For instance, we do not receive the full payment within the specified due date, your service provider might get acknowledged through us who may cancel the booking and apply the cancellation charges as stated in the terms and conditions of booking. Please note that the payment of your travel arrangement remains with us on their behalf.</p>
+
+                <p><b>Data Protection Policy</b></p>
+
+                <p>We use the data provided to us by keeping in mind the end goal: to start the booking procedure you have made with us and to ensure that your travel-related necessities are organized easily and run smoothly.</p>
+
+                <p><b>Force Majeure</b></p>
+
+                <p>You won't be paid any fees nor we will be considered responsible for cancelling your travel plans in any way because of any unforeseeable or unusual occurrences outside our ability to control. These conditions can resemble civil riots, war or risk of war, industrial dispute including terrorist activity and its upshots, aviation traffic issues, fire or climate conditions, atomic or catastrophic events, unavoidable issues with transport, pandemics and epidemics, closure of ports or air terminals and other likely events beyond our or the concerned travel provider’s hands.</p>
+
+                <p><b>Cancellations You Require</b></p>
+
+                <p><b>Air Ticket Refund:</b> Nearly all airline tickets are issued once we receive the complete payment while bookings are non-refundable, non-changeable and non-re-routable unless mentioned otherwise. Concerning any change to a special-fare ticket, there may be a few service providers (specifically airline carriers) who might consider a “name change” as a cancellation and may not initiate a refund. If you haven’t used your flight’s outbound portion, the airline might automatically cancel the return sector and no refund might be initiated as no refund clause exists for such past-used tickets. Usually, all the partly-used tickets are non-refundable, also if cancelled within 24 hours prior to departure time.</p>
+
+                <p><b>Other Individual Components:</b> Concerning all Individual Components, the charges remain constant and will be imposed on, excluding your confirmation invoice or when separate cancellation charges are mentioned in the terms of use of the service supplier. You may receive the full refund according to what you have submitted. In case, you have paid the part payment, the refund will be applicable for that payment and if you have made the complete payment, you will get a 100% refund of the Individual Component’s price.</p>
+
+                <p>We will inform you about the updated cancellation or change charges while processing the same.</p>
+
+                <p><b>Cancellations &amp; Changes by the Supplier</b></p>
+
+                <p>You will be enlightened by us of any changes, modifications or cancellations at the earliest. When the service provider offers any replacement for the travel arrangements or a complete refund, you will be required to inform us about your preference within the time limit to be specified. In case, you fail to do it, the supplier will assume that you want to receive the complete refund. No liability is accepted from us for any kind of changes or cancellations done to your travel arrangements by the service supplier in accordance with your contract with them.</p>
+
+                <p><b>Responsibilities for Your Booking</b></p>
+
+                <p>The agreement is linked to the service supplier(s) and the conditions applicable. Being an agent, we are not responsible for provisions of the travel bookings. Our responsibilities are finite to processing the booking as per your preferences and instructions. Note that we do not have any responsibility for any kind of information that we pass on in good faith from our end regarding the booking. Although we are responsible under any circumstances whatsoever, our maximum responsibility is only limited to a double fare of your booking (or the right part of the total amount when not all the travellers mentioned in the booking is impacted). We do not eliminate any responsibility for cases-related to personal injury or death that come because of our or any of our employee’s carelessness while acting within their employment’s course.</p>
+            </div>
+        </div>
+   
+    <!-- END: ABOUT-US -->
+</section>
+
+    </div>
+    
+    <!-- Footer Call back-->
+
+
+<style>
+    .anodisp {
+        display: none;
+    }
+</style>
+
+<div class="footer_call">
+
+    <div class="footer_pp" style="display: none;">
+       
+        <div class="p_h">
+            <img src="/Content/images/fav.png" alt="" border="0" />
+        </div>
+
+        <h2>Exclusive deals<span>Speak to our expert</span></h2>
+                     
+           <div id="divCallBackTextInfo">
+            
+            <div class="footer-telno" style="margin: 0px -10px">
+            <a href="tel:+91-971-700-7657"
+            ><span
+              ><i class="flaticon-suntour-phone"></i>A Single Call Solves Everything</span
+            ></a
+          >
+            
+            <a href="tel:+91-971-700-7657"
+              ><span
+                ><i class="flaticon-suntour-phone"></i>+91-971-700-7657</span
+              ></a
+            >
+            <span class="onecalltext">Calls answered in 5 seconds</span>
+          </div>
+
+            <div class="ortext">OR</div>
+            <p>For a free & immediate callback, enter your number below and we will call you in 5 seconds.</p>
+
+            </div>
+
+            <form id="form1" action="/contact" method="post" autocomplete="off">
+
+                <input type="hidden" id="hdnCallMeB" name="FormType" value="CallOus" />
+
+                <div id="tab1">
+
+                    <div id="divCallBackBoxHome">
+
+                     
+                        <span class="font-4">
+                            <b class="call-bycountry">+91</b>
+                            <input class="anodisp" name="countrycode" type="text">
+                            <input type="tel" title="Enter 10-15 digits phone number" onkeyup="return ClearCallBackError('contactuserror1')" pattern="\d*"
+                                   required placeholder="Enter 10-15 digits number" value="" maxlength="15"
+                                   onkeypress="return isNumberKey(event);" minlength="10" name="callusphone" id="callusphone1" />
+                            <span id="contactuserror1"></span><button id="Button11" style="display:none;" type="submit" class="fieldButton"></button>
+                            <span class="closeinstantcall" style="display: none">X</span>
+                        </span>
+
+                        <a id="btnCallmeNow" href="javascript:void(0)" class="fieldButton callmenow active" style="width:100%" onclick="return ProcessFooterCallRequest();">Call Us Now !</a>
+
+                    </div>
+                    <a href="javascript:void(0)" class="btn btn-danger" id="btnCloseFooterProgress" onclick="return CloseFooterProgress()" style="float:right; display:none">X</a>
+
+<style>
+
+    ul li {
+
+        margin-left: 0;
+    }
+</style>
+
+
+
+<div class="mob-connecting hidden" id="divCallBackProgressBarHome" style="border: 0px solid #307fca; box-shadow: 0px 0px 0px 0px;">
+    
+    <div class="mob-connecting-left"><img src="/Content/images/call-connecting.jpg"></div>
+    <div class="mob-connecting-right">
+        <h2><span id="spanCallTextHome">Call in Progress</span><span><img src="/Content/images/dot-animation.gif" alt="dot-animation"></span></h2>
+        <h3>Please answer when your phone rings. </h3>
+
+        <p>If you don't receive any call. Please make sure </p>
+        <ul>
+     
+            <li> Phone is Not on Voicemail</li>
+            <li> A Good Network Zone</li>
+        </ul>
+
+    </div>
+
+</div>
+
+
+                    
+                </div>
+
+
+
+            </form>
+
+        </div>
+   
+    <div class="showmsg" style="display: none;"><span id="lblMsg3"></span><i class="fa fa-times" aria-hidden="true"></i></div>
+  
+    <i class="fa fa-phone" aria-hidden="true">
+        <div class="phonering-alo-phone phonering-alo-green phonering-alo-show" id="phonering-alo-phoneIcon" style="margin-top: -60px; position: absolute; left: -70px; top: -13px; /* width: 20px; */">
+            <div class="phonering-alo-ph-circle"></div>
+            <div class="phonering-alo-ph-circle-fill"></div>
+            <a class="pps-btn-img">
+                <div class="phonering-alo-ph-img-circle"></div>
+            </a>
+        </div>
+    </i>
+    <i class="crs" style="display: none;">X</i>
+    <span class="call_txt" style="display: none;">Would you like a free callback in 5 Seconds. <i class="fa fa-times" aria-hidden="true"></i></span>
+</div>
+
+
+<script type="text/javascript">
+                
+    function ProcessCallLater() {
+        var phoneNumber = $("#callusphone1").val().trim();
+        var Datev = $("select[name='ddlCallBackDate']").val();//'2019-03-08';
+        var Timev = $("select[name='ddlCallBackTime']").val();//'10:40';
+        $("#hdnCallMeB").val("CallBackLater");
+        $("#hdnCallLaterDate").val(Datev);
+        $("#hdnCallLaterTime").val(Timev);
+        var isPhoneNoExist = false;
+        if (phoneNumber == "") {
+            $("#contactuserror1").html("Please enter phone number.");
+            return false;
+        }
+        if (Datev == "") {
+            $("select[name='ddlCallBackDate']").html("Please select date.");
+            return false;
+        }
+        if (Timev == "") {
+            $("select[name='ddlCallBackTime']").html("Please select time.");
+            return false;
+        }
+        if (!validatePhone(phoneNumber)) {
+            $("#contactuserror1").html("Please provide valid phone number.");
+            return false;
+        }
+
+        $.ajax({
+            url: "/FooterLinks/CheckPhoneExist?callDate=" + Datev + "&callTime=" + Timev + "&callType=SHBC&phoneNo=" + phoneNumber,
+            type: "GET",
+            cache: false,
+            dataType: "json",
+            contentType: 'application/json; charset=utf-8',
+            beforeSend: function () {
+                $("#btnScheduleCallNow").html('Please wait...');
+                $("#btnScheduleCallNow").attr('disabled', true).css("cursor", "no-drop");
+            },
+            success: function (data) {
+                if (data.IsNumberExist == "Yes") {
+                    document.getElementById("spnScheduleNumber").innerText = phoneNumber;
+                    document.getElementById("spnScheduleTime").innerText = data.RecentDate;
+                    $('#hdnConfirmationSource').val("HomeCallLater");
+                    $('#blkoverlay1').show();
+                    $('#divScheduleCallPopup').show();
+                }
+                else if (data.IsNumberExist == "No") {
+                    $("#form1").submit();
+                    $('input[name="callusphone"]').val('')
+                }
+                $("#btnScheduleCallNow").html('Schedule Callback !');
+                $("#btnScheduleCallNow").removeAttr('disabled').removeAttr("style");;
+            },
+            error: function (err) {
+                console.log(err);
+                $("#btnScheduleCallNow").html('Schedule Callback !');
+                $("#btnScheduleCallNow").removeAttr('disabled').removeAttr("style");;
+            }
+        });
+    }
+
+    function onDateChange(selecteddate) {
+        $.getJSON("/FooterLinks/GetTimeSegments", { date: $("#" + selecteddate.id).val() },
+         function (data) {
+             $("#callbackTime").html("");
+             $("#callbackTime").html(data.ResponseView)
+         }
+         );
+        return false;
+
+    }
+
+    function BacktoCallMeNow() {
+        $("#tab2").removeClass('showtab').addClass('hidetab');
+        $("#tab1").removeClass('hidetab').addClass('showtab');
+        $('#btnCallmeNow').addClass('active');
+    }
+
+    function ProcessFooterCallRequest()
+    {
+        var phoneNumber = $("#callusphone1").val().trim();
+        var isPhoneNoExist = false;
+        if (phoneNumber == "") {
+            $("#contactuserror1").html("Please enter phone number.");
+            $("#callusphone1").focus();
+            return false;
+        }
+        else if (validateMobileZeroStart('callusphone1', 'contactuserror1', 'Phone number cannot be start with zero') == false) {
+            return false;
+        }
+        if (!validatePhone(phoneNumber)) {
+            $("#contactuserror1").html("Please provide valid phone number.");
+            return false;
+        }
+        $.ajax(
+         {
+            url: "/FooterLinks/CheckPhoneExist?callType=CMB&phoneNo=" + phoneNumber,
+            type: "GET",
+            cache: false,
+            dataType: "json",
+            contentType: 'application/json; charset=utf-8',
+            beforeSend: function ()
+            {
+                $("#btnCallmeNow").html('Please wait...');
+                $("#btnCallmeNow").attr('disabled', true).css("cursor", "no-drop");;
+            },
+            success: function (data)
+            {                                    
+                if (data.IsNumberExist == "Yes")
+                {
+                    document.getElementById("cbNumber").innerText = phoneNumber;
+                    document.getElementById("dtCbtime").innerText = data.RecentDate;
+                    $('#hdnConfirmationSource').val("Home");
+                    $('#blkoverlay1').show();
+                    $('#confirmationPopup').show();
+                }
+                else if (data.IsNumberExist == "No")
+                {
+                    AcceptCallUsOption();
+                  
+                }
+                else if (data.IsNumberExist == "Blocked")
+                {
+                    document.getElementById("cbNumber").innerText = phoneNumber;
+                    document.getElementById("dtCbtime").innerText = data.RecentDate;
+                    $('#hdnConfirmationSource').val("Home1");
+                    $('#blkoverlay1').show();
+                    $('#ipblockpopup').show();
+                }
+                $("#btnCallmeNow").html('Call Us Now !');
+                $("#btnCallmeNow").removeAttr('disabled').attr("style","width:100%");
+
+            },
+            error: function (err) {
+                console.log(err);
+                $("#Button22new").html('Call Us Now !');
+                $("#Button22new").removeAttr('disabled').removeAttr("style");;
+            }
+        });
+    }
+
+    function CancelScheduleCallOption()
+    {
+        $('#blkoverlay1').hide();
+        $('#divScheduleCallPopup').hide();
+        $('input[name="callusphone"]').val('')
+        window.location.reload();
+    }
+
+    function ValidateCallMeLater() {
+        var phoneNumber = $("#callusphone1").val().trim();
+
+        if (phoneNumber == "") {
+            $("#contactuserror1").html("Please enter phone number.");
+            $("#callusphone1").focus();
+            return false;
+        }
+        else if (validateMobileZeroStart('callusphone1', 'contactuserror1', 'Phone number cannot be start with zero') == false) {
+
+            return false;
+        }
+        else {
+            $("#tab1").removeClass('showtab').addClass('hidetab');
+            $("#tab2").removeClass('hidetab').addClass('showtab');
+            $('#btnScheduleCallNow').addClass('active');
+
+        }
+
+    }
+
+    function closeCallBackProgress()
+    {
+        $("#divCallBackTextInfo").show();
+        $("#divCallBackProgreessBarHome").hide();
+        $("#divCallBackBoxHome").show();
+        $(".crs").show();
+        $(".crs").click();
+        $("#form1").reset();
+    }
+
+</script>
+
+<style>
+    .footer_call i.closeCallBack
+   {
+       background-color: #ff0000;
+    font-size: 17px;
+    /* line-height: 54px; */
+    border-radius: 42px;
+    /* box-shadow: inset 0 61px 4px #037eb4; */
+    /* animation: 5s infinite beatHeart; */
+    /* animation-timing-function: ease; */
+    /* animation-timing-function: ease-in-out; */
+    /* display: none; */
+    width: 34px;
+    height: 30px;
+}
+</style>
+
+    <!-- Footer Call back-->
+
+     <footer class="footer">
+      <div class="footerContinZer">
+        <footer class="footer">
+          <div class="footerTop">
+            <div class="container">
+              <div class="row pb-md-10">
+                
+
+                <div class="col-md-2 col-sm-7 fotterLinkforMobile">
+                  <div class="widget-footer impLink">
+                    <h4>Important Links</h4>
+                    <div class="widget-tags-wrap">
+                      <a href="/about.html" rel="tag" class="tag">About Us</a>
+                      <a href="/contact.html" rel="tag" class="tag"
+                        >Contact Us</a
+                      >
+                      <a href="/faqs.html" rel="tag" class="tag">FAQs</a>
+                      <a href="/traveladvice.html" rel="tag" class="tag"
+                        >Travel Advice</a
+                      >
+                      <a href="/sitemap.html" rel="tag" class="tag">Site Map</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-2 col-sm-7 fotterLinkforMobile">
+                  <div class="widget-footer impLink">
+                    <h4>Legal</h4>
+                    <div class="widget-tags-wrap">
+                      <a href="/privacy.html" rel="tag" class="tag">Privacy</a>
+                      <a
+                        href="/terms.html"
+                        rel="tag"
+                        class="tag"
+                        target="_blank"
+                        >Terms
+                      </a>
+                      <a href="/disclaimer.html" rel="tag" class="tag"
+                        >Disclaimer
+                      </a>
+                      <a href="/dataprotection.html" rel="tag" class="tag"
+                        >Data Protection Policy</a
+                      >
+                      <a href="/cookies.html" rel="tag" class="tag"
+                        >Cookies Policy</a
+                      >
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-2 col-sm-6 mb-sm-30 hideformobile">
+                  <div class="widget-footer">
+                    <h4>Destinations</h4>
+                    <div class="widget-tags-wrap">
+                      <a
+                        href="/destination/arunachal-pradesh.html"
+                        rel="tag"
+                        class="tag"
+                        onclick="return GetDestination('/destination/arunachal-pradesh', 'Menu')"
+                        >Arunachal Pradesh</a
+                      >
+                      <a
+                        href="/destination/maharashtra.html"
+                        rel="tag"
+                        class="tag"
+                        onclick="return GetDestination('/destination/maharashtra', 'Menu')"
+                        >Maharashtra</a
+                      >
+                      <a
+                        href="/destination/himachal-pradesh.html"
+                        rel="tag"
+                        class="tag"
+                        onclick="return GetDestination('/destination/himachal-pradesh', 'Menu')"
+                        >Himachal Pradesh</a
+                      >
+                      <a
+                        href="/destination/assam.html"
+                        rel="tag"
+                        class="tag"
+                        onclick="return GetDestination('/destination/assam', 'Menu')"
+                        >Assam</a
+                      >
+                      <a
+                        href="/destination/kashmir.html"
+                        rel="tag"
+                        class="tag"
+                        onclick="return GetDestination('/destination/kashmir', 'Menu')"
+                        >Kashmir</a
+                      >
+                    </div>
+                  </div>
+                </div>
+
+                 <div class="col-md-2 col-sm-7 hideformobile">
+                  <div class="widget-footer impLink">
+                    <h4>Our Services</h4>
+                    <div class="widget-tags-wrap">
+                      <a
+                        href="services/pilgrimage.html"
+                        rel="tag"
+                        class="tag"
+                        >Pilgrimage Bookings </a
+                      >
+                      <a
+                        href="services/adventure-packages.html"
+                        rel="tag"
+                        class="tag"
+                        > Himachal Expedition </a
+                      >
+
+                      <a
+                        href="services/hotels.html"
+                        rel="tag"
+                        class="tag"
+                        >Relaxing Stays</a
+                      >
+
+                      <a href="services/cabs.html" rel="tag" class="tag"
+                        >Cab Rentals</a
+                      >
+                      <a href="services/group-tours.html" rel="tag" class="tag"
+                        >Groups Travel</a
+                      >
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6 mb-sm-30 contactus-footer">
+                  <div class="socialLinkHolder">
+                    <h2>Connect with Us</h2>
+                    <div class="social">
+                      <a
+                        class="social-icon fb"
+                        target="_blank"
+                        data-tooltip="Facebook"
+                        href="https://www.facebook.com/sjrtravelsuk"
+                      >
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                      </a>
+                      <a
+                        class="social-icon tw"
+                        target="_blank"
+                        data-tooltip="Twitter"
+                        href="https://twitter.com/sjrtravelsuk"
+                      >
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                      </a>
+
+                      <a
+                        class="social-icon insta"
+                        target="_blank"
+                        data-tooltip="Instagram"
+                        href="https://www.instagram.com/sjrtravelsuk"
+                      >
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                      </a>
+                    </div>
+<div class="social">
+                      <a href="https://www.iata.org/">
+                    <img src="/Content/images/iata.jpg" width="200px" style="height: 80px; margin-left: 7px;" alt="International Air Transport Association">
+                  </a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+
+        <div class="footerBottom">
+          <div class="container">
+            <div class="footerWhitesec">
+              <div class="website-operated">
+                This website is operated by SJR Travels Limited,Company Number
+                14498022 is a company registered at 114/115 first floor pocket 20 sector 24 Rohini Delhi -110085, India
+                which is recoginised by,
+                <a
+                  href="https://www.iata.org/"
+                  style="font-weight: 800; color: #000000"
+                  >International Air Transport Association</a
+                >.
+              </div>
+            </div>
+            <div class="footer-visalogo">
+              <p style="color: #000; font-size: 12px; font-weight: bold">
+                © Copyright 2023 sjrtravels.com | All Rights Reserved
+              </p>
+              <div class="footerLogo">
+                <div class="securebooking1">
+                  <img
+                    src="/Content/images/visa-logo2.png"
+                    alt="visa"
+                    class="visalogo"
+                  />
+
+                  <img src="/Content/images/card-img.jpg" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+ <div class="container">
+     <div class="callicon call-mobile">
+         <div class="imgholder">
+             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 437.6 437.6" style="enable-background: new 0 0 437.6 437.6;" xml:space="preserve" width="512px" height="512px">
+             <g>
+             <g>
+             <g>
+             <path d="M264.6,300.4h-92C97,300.4,35.4,362,35.4,437.6h366.8C401.8,362.4,340.2,300.4,264.6,300.4z" fill="#FFFFFF" />
+             <path d="M235,237.6c7.2,0,14,2.4,19.2,6.8h33.2c16.4-17.2,26.4-40,26.4-65.6c0-52.8-42.8-95.2-95.2-95.2s-95.2,42.4-95.2,95.2     c0,35.6,19.6,66.8,48.8,83.2c3.2-14,15.6-24.4,30-24.4H235z" fill="#FFFFFF" />
+             <path d="M77.8,186.8c1.2,10,6,19.2,12.8,26c5.2,5.2,12,9.2,19.6,11.6c-0.4-1.6-0.4-3.2-0.4-4.4v-77.6c0-1.6,0-3.2,0.4-4.8     c-7.6,2-14,6-19.6,11.6c-0.4,0.4-1.2,1.2-1.6,1.6v-3.2c0-7.6,0.8-15.2,2-22.4c1.2-7.6,3.2-14.8,6-21.6c2.4-7.2,5.6-14,9.6-20.4     c3.6-6.4,8-12.8,12.8-18.4c0.4-0.4,0.8-1.2,0.8-1.6c3.6,0.4,7.2-0.8,9.6-3.2c24.4-24.4,56.4-36.4,88-36.4c31.6,0,64,12,88,36.4     c2.8,2.8,6.4,3.6,9.6,3.2c0.4,0.4,0.4,1.2,0.8,1.6c4.8,5.6,9.2,12,12.8,18.4c3.6,6.4,6.8,13.2,9.6,20.4c2.4,7.2,4.4,14.4,6,22     c1.2,7.2,2,14.8,2,22.4v3.2c-0.4-0.8-1.2-1.2-1.6-1.6c-5.2-5.2-12-9.2-19.6-11.6c0.4,1.6,0.4,3.2,0.4,4.8V220     c0,1.6,0,3.2-0.4,4.4c2-0.4,4-1.2,6-2v25.2c0,2.8-0.4,5.6-0.8,7.6c-0.4,2-1.2,3.2-2,4.4c-0.8,0.8-2,1.6-3.2,2     c-1.6,0.4-3.2,0.8-5.2,0.8h-0.4h-73.6c-2.4-4-6.4-6.8-11.6-6.8h-32.8c-7.2,0-12.8,6-12.8,12.8c0.4,7.2,6,12.8,13.2,12.8H235     c4.8,0,9.2-2.8,11.6-6.8H321h2.8c2.8,0,5.2-0.8,7.6-1.6c3.2-1.2,5.6-2.8,8-5.2c2-2.4,3.6-5.2,4.8-8.8c0.8-3.2,1.6-7.2,1.6-11.6     v-32V214c0.4-0.4,0.8-0.8,1.2-1.2c6.8-6.8,11.6-16,12.8-26c0.4-0.4,0.8-0.4,0.8-0.8c1.2-1.2,2-3.2,2-4.8V148     c0-8.4-0.8-16.8-2-24.8c-2.4-8.4-4.4-16.4-7.2-24.4c-2.8-8-6.4-15.6-10.8-22.8c-4-7.2-8.8-14-14.4-20.4c-0.4-0.8-1.2-1.2-2-1.6     c0.8-3.6-0.4-8-3.2-10.8C294.2,14.4,256.6,0,218.6,0S143,14.4,113.8,43.2c-2.8,2.8-4,7.2-3.2,10.8c-0.8,0.4-1.2,0.8-2,1.6     C103,62,98.2,68.8,94.2,76s-7.6,14.8-10.8,22.8c-2.8,8-5.2,16-6.4,24.4c-1.6,8-2,16.4-2,24.8v33.2c0,2,0.8,3.6,2,4.8     C77.4,186.4,77.8,186.4,77.8,186.8z" fill="#FFFFFF" />
+                        </g>
+                    </g>
+                </g>
+            </svg>
+         </div>
+         <div class="callInfo">
+             <h3>How may we help you? <i class="fa fa-times" aria-hidden="true"></i></h3>
+             <form id="form3" method="post" action="/contact">
+                 <input type="hidden" id="hdnGetInTouch" name="FormType" value="GetInTouch" />
+                 <ul>
+                     <li>
+                         <input class="inputField inName" onkeyup="hideDivErr()" onkeypress="    return isCharKey(event)" type="text" id="rf_name" placeholder="Full Name" name="Name" maxlength="40" />
+                         <span class="error" id="dvNameRf" style="display: none;">Please enter your full name</span>
+                     </li>
+                     <li>
+                         <input class="inputField inEmail" onkeyup="hideDivErr()" type="text" id="rf_email" placeholder="Email ID" name="Email" maxlength="80" />
+                         <span class="error" id="dvMailRf" style="display: none;">Please enter your email id</span>
+                         <span class="error" id="dvMailRf1" style="display: none;">Please enter valid email id</span>
+                     </li>
+                     <li>
+                         <input class="inputField inPhone" onkeyup="hideDivErr()" onkeypress="return isNumberKey(event)" type="text" id="rf_phone" placeholder="Phone Number" name="Phone" maxlength="15" />
+                         <span class="error" id="dvPhoneRf" style="display: none;">Please enter your phone number</span>
+                         <span class="error" id="dvPhoneRf1" style="display: none;">Please enter correct phone number</span>
+                     </li>
+                     <li id="divContactSource">
+                         <input class="inputField " onkeyup="hideDivErr()" onkeypress="" type="text" id="tbSource" placeholder="contact source" name="ContactSource" maxlength="50" value="" />
+
+                     </li>
+                     <li id="divContactCampaign">
+                         <input class="inputField " onkeyup="hideDivErr()" onkeypress="" type="text" id="tbCampaign" placeholder="contact campaign" name="ContactCampaign" maxlength="50" value="online" />
+
+                     </li>
+                     <li>
+                         <textarea name="Comment" rows="3" id="rf_Comment" placeholder="Message" class="inputField" maxlength="250" style="line-height:20px;"></textarea>
+                     </li>
+                     <li>
+                         <button id="Button2" type="submit" class="emailbtn" onclick="return MailValidate();">Submit</button>
+                     </li>
+                 </ul>
+             </form>
+         </div>
+     </div>
+ </div>
+    <div id="lblSubscribe" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+
+                <div class="modal-body">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">
+                        Close
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="scroll-top"><i class="fa fa-angle-up"></i></div>
+    <div class="confirmationPopup" id="confirmationPopup">
+        <p>
+            We have already recieved a call back from phone number <br />
+            <span id="cbNumber"><i class="flaticon-suntour-phone"></i> 9802348392</span> at
+            <span id="dtCbtime">4 dec 2018 19:38 pm</span>.
+            <br /> <b>Do you want to receive a call back again?</b>
+        </p>
+
+        <div class="btnHolder">
+            <button id="btnCallUsYes" class="yesBtn" onclick="AcceptCallUsOption()">Yes</button>
+            <button id="btnCallUsNo" class="noBtn" onclick="CancelCallUsOption()">No</button>
+        </div>
+
+    </div>
+
+    <input type="hidden" id="hdnConfirmationSource" value="Home" />
+
+    <!-- Blocked Popup-->
+    <div id="ipblockpopup" class="modal" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+
+                <div class="modal-body">
+                    <div class="ibblockbg"><img src="/Content/images/logo.gif" style="animation-iteration-count: infinite;"  alt="SJR Travels"></div>
+                    <p>
+                        Your <strong>IP and/or Phone Number</strong> found suspicious and under screening. Please wait to continue.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" onclick="CloseBlockedPopup()" data-dismiss="modal">
+                        <i class="fa fa-times" aria-hidden="true"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ! footer-->
+
+    
+    <script src="/Content/js/script.js"></script>
+<script src="/Content/js/custom.js"></script>
+
+    
+    <script>
+        $(function () {
+            $("#divContactSource").hide();
+            $("#divContactCampaign").hide();
+        })
+    </script>
+    <style>
+        .divPopUpMg1 {
+            padding: 5%;
+        }
+
+            .divPopUpMg1 h2 {
+                font-size: 40px;
+                color: green;
+                padding-bottom: 10px;
+            }
+
+            .divPopUpMg1 p {
+                font-size: 20px;
+                padding-bottom: 30px;
+            }
+        /*Validation*/
+    </style>
+
+    <script type="text/javascript">
+
+        function OnlyCharNumberKey(event)
+        {
+            var regex = new RegExp("[a-zA-Z0-9]");
+            var key = event.keyCode || event.which;
+            key = String.fromCharCode(key);
+            if (!regex.test(key) && key.charCodeAt(0) > 32)
+            {
+                event.returnValue = false;
+                if (event.preventDefault)
+                {
+                    event.preventDefault();
+                }
+            }
+        }
+
+        function OnlyCharacterKey(event)
+        {
+            var regex = new RegExp("[a-zA-Z]");
+            var key = event.keyCode || event.which;
+            key = String.fromCharCode(key);
+            if (!regex.test(key) && key.charCodeAt(0) > 32) {
+                event.returnValue = false;
+                if (event.preventDefault) {
+                    event.preventDefault();
+                }
+            }
+        }
+
+        function NumberKeyWithDecimal(event) {
+
+            var regex = new RegExp("[0-9.]");
+            var key = event.keyCode || event.which;
+            key = String.fromCharCode(key);
+
+            if (!regex.test(key) && key.charCodeAt(0) > 32) {
+                event.returnValue = false;
+                if (event.preventDefault) {
+                    event.preventDefault();
+                }
+            }
+        }
+
+        function isCharKey(evt) {//Olny letters (a-z and A-Z), spaces,brcket(), hyphen(-) and  _ characters
+            if ((event.keyCode == 33) || (event.keyCode == 34) || (event.keyCode == 36) || (event.keyCode == 37) || (event.keyCode == 38) || (event.keyCode == 42) || (event.keyCode == 47) || (event.keyCode == 48) || (event.keyCode == 49) || (event.keyCode == 50) || (event.keyCode == 50) || (event.keyCode == 51) || (event.keyCode == 52) || (event.keyCode == 53) || (event.keyCode == 54) || (event.keyCode == 55) || (event.keyCode == 56) || (event.keyCode == 57) || (event.keyCode == 60) || (event.keyCode == 62) || (event.keyCode == 63) || (event.keyCode == 64) || (event.keyCode == 92) || (event.keyCode == 94) || (event.keyCode == 96) || (event.keyCode == 124) || (event.keyCode == 126))
+            {
+                return false;
+            }
+            else {
+                return true;
+            }
+        }
+
+        function isNumberKey(evt) {
+            var charCode = (evt.which) ? evt.which : event.keyCode
+            if (charCode > 31 && (charCode < 48 || charCode > 57))
+                return false;
+
+            return true;
+        }
+
+        function hideDivErr() {//onchange="hideDivErr();"
+            document.getElementById("dvNameRf").style.display = "none";
+            document.getElementById("dvMailRf").style.display = "none";
+            document.getElementById("dvMailRf1").style.display = "none";
+            document.getElementById("dvPhoneRf").style.display = "none";
+            document.getElementById("dvPhoneRf1").style.display = "none";
+        }
+
+        function MailValidate() {
+
+            var IsValid = true;
+            var vName = document.getElementById("rf_name").value;
+            var vemail = document.getElementById("rf_email").value;
+            var vphone = document.getElementById("rf_phone").value;
+            if (vName == "") {
+                document.getElementById("dvNameRf").style.display = "block";
+                document.getElementById("rf_name").focus();
+                IsValid = false;
+            }
+            else if (vemail == "") {
+                document.getElementById("dvMailRf").style.display = "block";
+                document.getElementById("rf_email").focus();
+                IsValid = false;
+            }
+            else if (!validateMail(vemail)) {
+                document.getElementById("dvMailRf1").style.display = "block";
+                document.getElementById("rf_email").focus();
+                IsValid = false;
+                document.getElementById("dvPhoneRf").style.display = "none";
+            }
+            else if (vphone == "") {
+                document.getElementById("dvPhoneRf").style.display = "block";
+                document.getElementById("rf_phone").focus();
+                IsValid = false;
+            }
+            else if (startsWith(vphone, "00"))
+            {
+                document.getElementById("dvPhoneRf").style.display = "block";
+                document.getElementById("dvPhoneRf").innerText = "Phone number cannot be start with zero";
+                document.getElementById("rf_phone").focus();
+                IsValid = false;
+            }
+            else if (!validatePhone(vphone)) {
+                document.getElementById("dvPhoneRf1").style.display = "block";
+                document.getElementById("rf_phone").focus();
+                IsValid = false;
+            }
+
+            if (IsValid) {
+                $("#Button2").html("Please wait...");
+                $("#Button2").attr('disabled', true).css("cursor", "no-drop");
+                $("#form3").submit();
+                return true;
+            }
+            else {
+                return false;
+            }
+        }
+
+        function validateMail(vemail) {
+            if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(vemail)) {
+                return true;
+            }
+            else {
+                return false;
+            }
+        }
+
+        function validatePhone(ipphone) {
+            if (ipphone.length >= 10 && ipphone.length <= 15) 
+            {
+                if (startsWith(ipphone, "00")) {
+                    return false;
+                }
+                else
+                {
+                    return true;
+                }
+            }
+            else 
+            {
+                return false;
+            }
+        }
+
+        function startsWith(str, word) {
+            return str.lastIndexOf(word, 0) === 0;
+        }
+
+
+        function CheckMobile() {
+            var vMobNum = document.getElementById("Mobile").value;
+            if (vMobNum != "") {
+                if (vMobNum.length >= 10 && ipphone.length <= 15) {
+                    document.getElementById("dvMobileErr").style.display = "none";
+                    return true;
+                }
+                else {
+                    document.getElementById("dvMobileErr").style.display = "block";
+                    return false;
+                }
+            }
+            else {
+                document.getElementById("dvMobileErr").style.display = "block";
+                return false;
+            }
+        }
+
+        function hideMobileErr() {
+            document.getElementById("dvMobileErr").style.display = "none";
+        }
+            function ClearGetInTouch()
+        {
+                $("#rf_name,#rf_email,#rf_phone,#rf_Comment").val("");
+                hideDivErr();
+              
+            }
+    </script>
+    <script type="text/javascript">
+        // Set timeout variables.
+        //var timoutWarning = 600; // Display warning in 1 Mins.
+        //var timoutNow = 1200; // Timeout in 2 mins.
+        var timoutWarning = 3000; // Display warning in 1 Mins.
+       // var timoutNow = 1200000; // Timeout in 2 mins.
+        var warningTimer;
+      //  var timeoutTimer;
+
+        // Start timers.
+        function StartTimers() {
+            //warningTimer = setTimeout("IdleWarning()", timoutWarning);
+           // timeoutTimer = setTimeout("IdleTimeout()", timoutNow);
+        }
+
+        // Reset timers.
+        function ResetTimers()
+        {
+            //clearTimeout(warningTimer);
+            //clearTimeout(timeoutTimer);
+            //StartTimers();
+            //$("#timeout").dialog('close');
+        }
+
+        // Show idle timeout warning dialog.
+        function IdleWarning()
+        {
+            $("#timeout").dialog({
+                modal: true
+            });
+        }
+    </script>
+    <script type="text/javascript">
+
+        function CheckCookiesStatus() {
+
+            if (navigator.cookieEnabled)
+            {
+                HideCookiesModal();
+                getCookiesStatus();
+            }
+            else
+            {
+                CallCookiesModal();
+            }
+        }
+
+        function IsCookiesEnabled()
+        {
+            HideCookiesModal();
+            location.reload();
+            if (navigator.cookieEnabled) {
+                HideCookiesModal();
+            }
+            else {
+                CallCookiesModal();
+            }
+        }
+
+        function HideCookiesModal() {
+            $("#dvCheckCookies").hide();
+        }
+
+        function CallCookiesModal() {
+            $("#dvCheckCookies").dialog({
+                modal: true
+            });
+        }
+
+        function CallAcceptPopup() {
+            $("#dvAcceptCookies").show()
+        }
+
+        function HideAcceptPopup() {
+            $("#dvAcceptCookies").hide();
+        }
+
+        function CloseAcceptPopup() {
+            if (navigator.cookieEnabled) {
+                HideAcceptPopup();
+                getCookiesStatus();
+            }
+            else {
+                CallAcceptPopup();
+            }
+        }
+
+        function AllowCookies() {
+            if (navigator.cookieEnabled) {
+
+                setCookies();
+                HideAcceptPopup();
+            }
+            else {
+                CallAcceptPopup();
+            }
+        }
+
+        function getCookiesStatus() {
+
+            if (typeof (Storage) !== "undefined")
+            {
+                if (navigator.cookieEnabled)
+                {
+                    if (localStorage.length > 0)
+                    {//("TU_TnC_CookiesData", "TU Term And Condition Cookies Data");
+                        if (localStorage.getItem("TU_TnC_CookiesData") != null && localStorage.getItem("TU_TnC_CookiesData") != undefined && localStorage.getItem("TU_TnC_CookiesData") != "")
+                        {
+                            HideAcceptPopup();
+                        }
+                        else
+                        {
+                            CallAcceptPopup();
+                        }
+                    }
+                    else
+                    {
+                        CallAcceptPopup();
+                    }
+                }
+                else
+                {
+                    CallCookiesModal();
+                }
+            }
+            else
+            {
+                CallCookiesModal();
+            }
+        }
+
+        function setCookies() {
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function () {
+                if (this.readyState == 4 && this.status == 200) {
+                    localStorage.setItem("TU_TnC_CookiesData", "TU Term And Condition Cookies Data");
+                }
+            };
+            xhttp.open("GET", "/Flight/SetCookies?Type=SetStatus", true);
+            xhttp.send();
+        }
+     
+    </script>
+
+    <script>
+
+        function CloseTimeOutCallBack()
+        {
+            $("#btnCloseTimeOutCallBack").hide();
+            $("#divCallBackProgressBarTimeOut").addClass("hidden");
+            $("#divCBTimeout").removeClass("hidden");
+            $('#timeoutBox').dialog('close')
+            $(".ui-dialog-titlebar-close").removeClass("hidden");
+            $(".ui-dialog-titlebar-close").click();
+           
+            
+        }
+        function AcceptCallUsOption()
+        {
+            var TimeOut = 120000;
+            $(".blkoverlay1").hide();
+            $('#confirmationPopup').hide();
+
+            //=============Call Back Footer Desktop==================
+            if ($("#hdnConfirmationSource").val() == "" || $("#hdnConfirmationSource").val() == "Home")
+            {
+                PostCallBackRequest("form1");
+                
+                $("#blkoverlay1").show();            
+                $("#divCallBackProgressBarHome").removeClass("hidden");
+                $("#divCallBackBoxHome").hide();
+                $("#divCallBackTextInfo").hide();
+                $(".crs").hide();
+                $(".call_txt").hide();
+
+                $("#btnCloseFooterProgress").show();
+                
+                ShowCallProgressStatus("spanCallTextHome");
+                
+                setTimeout(function ()
+                {
+                    $("#btnCloseFooterProgress").hide();
+                    $(".crs").show();        
+                    $("#blkoverlay1").hide();
+                    $("#divCallBackTextInfo").show();
+                    $("#divCallBackBoxHome").show();
+                    $(".crs").click();
+                    $("#divCallBackProgressBarHome").addClass("hidden");
+                    document.getElementById("form1").reset();
+                }, parseInt(TimeOut))
+
+            }
+            //=============Call Back Top Desktop==============
+            else if ($("#hdnConfirmationSource").val() == "HomeCallBackTop")
+            {
+                PostCallBackRequest("formCallOus");
+
+                $("#divCallBackProgressBarHeader").removeClass("hidden");
+                $("#btnCloseHeaderProgress").removeClass("hidden");
+                
+                $("#divCallBackTop").addClass("hidden");
+                $(".closeit").addClass("hidden");
+
+                ShowCallProgressStatus("spanCallTextHeader");
+
+                setTimeout(function ()
+                {
+                    //=============Show Callback=================
+                    $("#divCallBackTop").removeClass("hidden");
+                    $("#btnCloseCallBack").click();
+                    $("#btnCloseHeaderProgress").addClass("hidden");
+                    $("#divCallBackProgressBarHeader").addClass("hidden");
+                    document.getElementById("formCallOus").reset();
+                }, parseInt(TimeOut))
+
+            }
+
+            //===================Deal Time Out=======================
+            else if ($("#hdnConfirmationSource").val() == "TimeOut")
+            {
+                PostCallBackRequest("formCallOusTimeOut");
+
+                $('#timeout').dialog('open');
+                $("#divCallBackProgressBarTimeOut").removeClass("hidden");
+                $("#divCBTimeout").addClass("hidden");
+                $("#btnCloseTimeOutCallBack").show();
+                $(".ui-dialog-titlebar-close").hide();
+
+                ShowCallProgressStatus("spanCallTextTimeOut");
+
+                setTimeout(function ()
+                {
+                    $('#timeoutBox').dialog('close')
+                    $(".ui-dialog-titlebar-close").show();
+                    $("#btnCloseTimeOutCallBack").hide();
+                    $("#divCallBackProgressBarTimeOut").addClass("hidden");
+                    $("#divCBTimeout").removeClass("hidden");
+                    $(".ui-dialog-titlebar-close").removeClass("hidden");
+                    document.getElementById("formCallOusTimeOut").reset();
+                }, parseInt(TimeOut))
+
+            }
+
+            //================Call Back For Error Page Done=================
+            else if ($("#hdnConfirmationSource").val() == "CallBackError")
+            {
+                //Show Call Progrss
+                PostCallBackRequest("formCallOusCallBackError");
+
+                $("#divCallBackBoxError").addClass("hidden");
+
+                $("#divCallBackProgressBarError").removeClass("hidden");
+
+           
+                //Call Progress Text
+                ShowCallProgressStatus("spanCallTextError");  
+
+                //Reset
+                setTimeout(function ()
+                {
+                    //=============Show Callback=================
+                    $("#divCallBackBoxError").removeClass("hidden");
+                    $("#divCallBackProgressBarError").addClass("hidden");
+                    document.getElementById("formCallOusCallBackError").reset();
+
+                }, parseInt(TimeOut))
+
+            }
+
+            //=====================Schedule Callback ====================
+            else if ($("#hdnConfirmationSource").val() == "HomeCallLater")
+            {
+                $("#hdnCallMeB").val("CallBackLaterUpdate")
+
+                $('#blkoverlay1').hide();
+
+                $('#divScheduleCallPopup').hide();
+
+                $("#form1").submit();
+
+                $('input[name="callusphone"]').val('')
+
+                $("#hdnCallMeB").val("CallBackLater")
+            }
+
+        }
+        function CloseFooterProgress()
+        {
+            $("#btnCloseFooterProgress").hide();
+            $(".crs").show();
+            $("#blkoverlay1").hide();
+            $("#divCallBackTextInfo").show();
+            $("#divCallBackBoxHome").show();
+            $(".crs").click();
+            $("#divCallBackProgressBarHome").addClass("hidden");
+        }  
+        function ProcessTopCallRequest()
+        {
+            var phoneNumber = $("#callusphone").val().trim();
+            var isPhoneNoExist = false;
+            if (phoneNumber == "") {
+                $("#contactuserror").html("Please enter phone number.");
+                return false;
+            }
+            else if (validateMobileZeroStart('callusphone', 'contactuserror', 'Phone number cannot be start with zero') == false) {
+                return false;
+            }
+            if (!validatePhone(phoneNumber)) {
+                $("#contactuserror").html("Please provide valid phone number.");
+                return false;
+            }
+            $.ajax({
+                url: "/FooterLinks/CheckPhoneExist?callType=CMB&phoneNo=" + phoneNumber,
+                type: "GET",
+                cache: false,
+                dataType: "json",
+                contentType: 'application/json; charset=utf-8',
+                beforeSend: function () {
+                    $("#Button2new").html('Please wait...');
+                    $("#Button2new").attr('disabled', true).css("cursor", "no-drop");
+                },
+                success: function (data)
+                {
+                  
+                    $('#hdnConfirmationSource').val("HomeCallBackTop");
+
+                    if (data.IsNumberExist == "Yes")
+                    {
+                        document.getElementById("cbNumber").innerText = phoneNumber;
+                        document.getElementById("dtCbtime").innerText = data.RecentDate;
+                        $('#blkoverlay1').show();
+                        $('#confirmationPopup').show();
+                    }
+                    else if (data.IsNumberExist == "No")
+                    {
+                        AcceptCallUsOption();
+                        
+                    }
+                    else if (data.IsNumberExist == "Blocked")
+                    {
+                        document.getElementById("cbNumber").innerText = phoneNumber;
+                        document.getElementById("dtCbtime").innerText = data.RecentDate;
+                        $('#hdnConfirmationSource').val("HomeCallBackTop");
+                        $('#blkoverlay1').show();
+                        $('#ipblockpopup').show();
+                    }
+                    $("#Button2new").html('Call Us Now !');
+                    $("#Button2new").removeAttr('disabled').removeAttr("style");
+                },
+                error: function (err) {
+                    console.log(err);
+                    $("#Button2new").html('Call Us Now !');
+                    $("#Button2new").removeAttr('disabled').removeAttr("style");
+                }
+            });
+
+
+
+
+
+        }
+ 
+        function ClearCallBackError(TargetID)
+        {
+            $("#"+TargetID).html("");
+        }
+                                   
+        function CancelCallUsOption()
+        {
+          $('#blkoverlay1').hide();
+          $('#confirmationPopup').hide();                        
+          $('input[name="callusphone"]').val('')
+          window.location.reload();
+        }
+
+        function ProcessCallRequestTimeOut() {
+            var phoneNumber = $("#callusphoneTimeOut").val().trim();
+            var isPhoneNoExist = false;
+            if (phoneNumber == "") {
+                $("#contactuserrorTimeOut").html("Please enter phone number.");
+                return false;
+            }
+            else if (validateMobileZeroStart('callusphoneTimeOut', 'contactuserrorTimeOut', 'Phone number cannot be start with zero') == false) {
+                return false;
+            }
+            if (!validatePhone(phoneNumber)) {
+                $("#contactuserrorTimeOut").html("Please provide valid phone number.");
+                return false;
+            }
+            $.ajax({
+                url: "/FooterLinks/CheckPhoneExist?callType=CMB&phoneNo=" + phoneNumber,
+                type: "GET",
+                cache: false,
+                dataType: "json",
+                contentType: 'application/json; charset=utf-8',
+                beforeSend: function () {
+                   $("#Button2newTimeOut").html('Please wait...');
+                    $("#Button2newTimeOut").attr('disabled', true).css("cursor", "no-drop");;
+                },
+                success: function (data)
+                {
+                    $('#hdnConfirmationSource').val("TimeOut");
+              
+
+                    if (data.IsNumberExist == "Yes") 
+                    {
+                        document.getElementById("cbNumber").innerText = phoneNumber;
+                        document.getElementById("dtCbtime").innerText = data.RecentDate;
+                        $('#blkoverlay1').show();
+                        $('#confirmationPopup').show();
+                    }
+                    else if (data.IsNumberExist == "No")
+                    {
+                        AcceptCallUsOption();
+                    }
+                    else if (data.IsNumberExist == "Blocked")
+                    {
+                        document.getElementById("cbNumber").innerText = phoneNumber;
+                        document.getElementById("dtCbtime").innerText = data.RecentDate;
+                        $('#blkoverlay1').show();
+                        $('#ipblockpopup').show();
+                    }
+                    $("#Button2newTimeOut").html('Call Us Now !');
+                    $("#Button2newTimeOut").removeAttr('disabled').removeAttr("style");;
+                },
+                error: function (err) {
+                    console.log(err);
+                    $("#Button2newTimeOut").html('Call Us Now !');
+                    $("#Button2newTimeOut").removeAttr('disabled').removeAttr("style");;
+                }
+            });
+
+
+
+
+
+        }
+
+        function ProcessErrorCallRequest()
+        {
+            var phoneNumber;
+
+            if ($("#txtCallmeBack").val().length == 0)
+            {
+                $("#txtCallmeBack").after("<span class='InlineError CallmeBack'>Please enter phone number!</span>");
+                $("#txtCallmeBack").focus()
+                return false
+            }
+            else if (ValidatePhone())
+            {
+                phoneNumber = $("#txtCallmeBack").val().trim();
+                $.ajax(
+                {
+                    url: "/FooterLinks/CheckPhoneExist?callType=CMB&phoneNo=" + phoneNumber,
+                    type: "GET",
+                    cache: false,
+                    async: false,
+                    dataType: "json",
+                    contentType: 'application/json; charset=utf-8',
+                    beforeSend: function ()
+                    {
+                        $("#btnCallBack").html('Please wait...');
+                        $("#btnCallBack").attr('disabled', true).css("cursor", "no-drop");
+
+                    },
+                    success: function (data)
+                    {
+                        $('#hdnConfirmationSource').val("CallBackError");
+
+                        if (data.IsNumberExist == "Yes")
+                        {
+                            document.getElementById("cbNumber").innerText = phoneNumber;
+                            document.getElementById("dtCbtime").innerText = data.RecentDate;
+                          
+                            $('#blkoverlay1').show();
+                            $('#confirmationPopup').show();
+
+                        }
+                        else if (data.IsNumberExist == "No")
+                        {
+                            AcceptCallUsOption();
+                        }
+
+                        $("#btnCallBack").html('Call Us Now !');
+                        $("#btnCallBack").removeAttr('disabled').removeAttr("style");
+
+                    },
+                    error: function (err)
+                    {
+                        console.log(err);
+                        $("#btnCallBack").html('Call Us Now !');
+                        $("#btnCallBack").removeAttr('disabled').removeAttr("style");;
+                    }
+                });
+
+            }
+
+
+        }
+       
+        //================Call Back Related Functions End================
+
+        function PostCallBackRequest(formName)
+        {
+            var data = $('form#' + formName).serialize();
+          
+            $.post('/FooterLinks/ContactUs', data,
+            function (result)
+            {
+               
+            });
+        }
+
+        function ShowCallProgressStatus(ControlID)
+        {
+            setTimeout(function () {
+                $("#" + ControlID).html("Call in Progress");
+            }, 7000);
+        }
+
+        function ShowCallBlockPopup() {
+
+            $(".ibblockbg").removeAttr("style");
+            $("#btnCloseCallBlockPopup").removeAttr("style")
+            $('#ipblockpopup').removeAttr("style")
+            $('#blkoverlay1').show();
+            if (!is_mobile()) {
+                $('#ipblockpopup').show();
+            }
+            else {
+                $(".ibblockbg").attr("style", "width: 100px;");
+                $("#btnCloseCallBlockPopup").attr("style", "margin-left: 19px;  margin-right: 10px; margin-top: 4px;}");
+                $('#ipblockpopup').attr("style", "display: block; z-index: 999999;  margin-top: 21%;");
+            }
+
+        }
+        //For block popup close
+        function CloseBlockedPopup() {
+            $('#blkoverlay1').hide();
+            $('#ipblockpopup').hide();
+            $('input[name="callusphone"]').val('')
+        }
+        //Keep this code for Reloading on Back Button Click//
+        //**** For Chrome/Mozilla***
+        if (!!window.performance && window.performance.navigation.type === 2) {
+            window.location.reload();
+        }
+        //**** For Mac - Safari***
+        window.onpageshow = function (event) {
+            if (event.persisted) {
+                window.location.reload();
+            }
+        };
+        //Keep this code for Reloading on Back Button Click//
+
+      
+
+        jQuery.validator.addMethod("validate_email", function (value, element) {
+            if (/^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/.test(value)) {
+                return true;
+            } else {
+                return false;
+            }
+        }, "Please enter a valid Email.");
+
+
+        $(".search-index-page .cff-list-tab").click(function (e) {
+            $("body").removeClass('searchbuttontop');
+        });
+
+        $(".search-index-page .cff-list-tab + .cff-list-tab").click(function (e) {
+            $("body").addClass('searchbuttontop');
+        });
+
+        function GetDestination(URL, From) {
+            $.ajax(
+            {
+                url: URL,
+                type: 'POST',
+                data: { "URL": URL, "From": From },
+                success: function (result) {
+
+                }
+            });
+
+        }
+
+
+    </script>
+                                      
+    <!-- Call back Popup Messages----->
+
+    <span class="call-back-loader hidden" id="callBackProgreessMobile">
+        <div class="mob-connecting" style="border:none; width:92%; box-shadow: none;">
+            <div class="mob-connecting-right" style="width:98%">
+                <h2><span id="spanCallText">Connecting</span><span><img src="/Content/images/dot-animation.gif" alt="dot-animation" /></span></h2>
+                <p>If you don't receive any call. Please make sure </p>
+                <ul>
+                    <li>Phone is Not on Voicemail</li>
+                    <li>A Good Network Zone</li>
+                </ul>
+            </div>
+        </div>
+    </span>
+
+    <!-- Call back Popup Messages----->
+
+    <script type="text/javascript">
+
+        $(document).ready(function ()
+        {
+            if (isProcessing == null || isProcessing == undefined || isProcessing == false)
+            {
+                setTimeout("TimeoutDeals()", timoutWarning);
+            }
+        });
+        function TimeoutDeals()
+        {
+            var pageName = window.location.pathname;
+            if(pageName==undefined || pageName=="/" || pageName.toUpperCase()=="/FLIGHT/INDEX")
+            {
+                pageName='Home';
+            }
+            if(sessionStorage.getItem('DisplayTimeOutPopup_'+ pageName) == null || sessionStorage.getItem('DisplayTimeOutPopup_'+ pageName).toString() == "No") {
+                IdleWarning();
+                sessionStorage.setItem('DisplayTimeOutPopup_'+ pageName, 'Yes');
+            }
+        }
+
+    </script>
+</body>
+</html>
